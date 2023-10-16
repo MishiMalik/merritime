@@ -1,0 +1,145 @@
+.social-top {
+  border: 2px solid $primary;
+}
+header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.header.scrolled {
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+.navbar-brand {
+  height: 65px;
+  img {
+    height: 65px;
+    object-fit: contain;
+  }
+}
+.nav-link {
+  font-size: 16px;
+  padding: 20px 20px !important;
+  display: block;
+  color: #232f4b;
+  font-weight: 600 !important;
+  position: relative;
+  text-transform: uppercase;
+ &:hover{
+    color: $primary-dark !important;
+ }
+ @media only screen and (max-width:991px){
+    padding: 10px 0px;
+    margin-bottom: 10px;
+ }
+}
+.active-nav{
+    color: $primary-dark !important;
+}
+.navbar-nav li {
+  margin: 0px !important;
+}
+.navbar .nav-btn--item {
+  @media only screen and (max-width: 991px) {
+    margin-top: 20px !important;
+  }
+}
+
+.navbar-nav li {
+  list-style: none;
+}
+.navbar-nav li .nav-link:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 0%;
+  background:linear-gradient(0deg, rgba(247,24,0,1) 0%, rgba(184,13,0,1) 68%);
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+.navbar-nav li .nav-link:hover:before {
+  width: 100%;
+}
+.navbar-nav li.center .nav-link:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar-nav li.upward a:before {
+  width: 100%;
+  bottom: -5px;
+  opacity: 0;
+}
+.navbar-nav li.upward .nav-link:hover:before {
+  bottom: 0px;
+  opacity: 1;
+}
+.navbar-nav li.forward .nav-link:before {
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+.navbar-nav li.forward .nav-link:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar-light .navbar-toggler {
+  border: 0px solid transparent;
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+.dropdown a{
+    color: #232f4b !important;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 10px;
+    min-width: 100px;
+    left: -40px!important;
+    li {
+        a{
+            font-size: 16px;
+            font-weight: 500;
+            color: #232f4b;
+        }
+    }
+}
+//   ===============================profile dropdown
+.profile-pic {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  object-fit: cover;
+  background:linear-gradient(0deg, rgba(247,24,0,1) 0%, rgba(184,13,0,1) 68%);;;
+}
+.chat i {
+  color: $primary-dark;
+  font-size: 22px;
+  cursor: pointer;
+}
+// =============================sidebar
+@media only screen and (max-width:991px){
+    .navbar-collapse{
+        position: absolute;
+        top: 80px;
+        left: -300px ;
+        bottom: 0;
+        width: 200px;
+       height: calc(100vh - 81px);
+       overflow-y: scroll;
+       background-color: white;
+       padding: 10px 10px;
+       transition: all .5s;
+    }
+}
+.close-side{
+    font-size: 30px;
+}
+.collapse:not(.show){
+    display: block;
+}

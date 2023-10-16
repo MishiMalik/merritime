@@ -1,0 +1,31 @@
+.theme-btn:after, .view-cart-btn:after, .theme-btn-s3:after, .theme-btn-s4:after{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    border: 1px solid #fff;
+    z-index: -1;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.theme-btn{
+    background: #f7fefa;
+    color: #002642 !important;
+    display: inline-block;
+    font-weight: 600 !important;
+    padding: 15px 45px;
+    border: 0;
+    text-transform: capitalize;
+    z-index: 1;
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+.theme-btn:hover{
+    background-color: $primary-dark;
+    color: white !important;
+  
+}
