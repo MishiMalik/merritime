@@ -625,13 +625,13 @@ header {
   justify-content: space-between;
   left: 10px; }
   .couple-card-deatils .view-deatils {
-    background-color: rgba(255, 255, 255, 0.193);
+    background-color: rgba(255, 255, 255, 0.393);
     padding: 2px 3px;
     border-radius: 3px;
     font-size: 14px;
-    color: white; }
+    color: black; }
     .couple-card-deatils .view-deatils i {
-      color: white;
+      color: black;
       margin-right: 5px; }
 
 .not-verified {
