@@ -27,9 +27,16 @@
 .theme-btn:hover{
     background-color: $primary-dark;
     color: white !important;
-  
+    &:after{
+        top: 0;
+        left: 0;
+    }
 }
-.theme-btn-main:after{
+.theme-btn:hover .theme-btn:after{
+    top: 0;
+    left: 0;
+}
+.theme-btn-main::after{
     position: absolute;
     left: 5px;
     top: 5px;
@@ -41,6 +48,7 @@
     transition: all 0.3s;
     text-decoration: none;
 }
+
 .theme-btn-main{
     background: radial-gradient( 100% 100% at 100% 0%, #BA3938 0%, $primary-dark 100% );
     color: white !important;
@@ -49,12 +57,20 @@
     padding: 15px 45px;
     border: 0;
     text-transform: capitalize;
-    z-index: 1;
+    z-index: 3;
     position: relative;
     text-decoration: none;
     font-size: 16px;
     transition: all 0.3s;
+    &:hover{
+        background: $primary-dark;
+        &::after{
+            top: 0;
+            left: 0;
+        }
+    }
 }
+
 .main-btn{
     display: inline-block;
     outline: 0;

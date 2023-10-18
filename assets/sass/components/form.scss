@@ -47,11 +47,11 @@ opacity: 1;
 }
 .reset-password{
   font-size: 14px;
-  color: gray !important;
+  color: rgba(77, 73, 73, 0.5) !important;
   font-weight: 600 !important;
   text-decoration: none;
   &:hover{
-    color: #BA3938 !important;
+    color: gray !important;
   }
  
 }
@@ -278,7 +278,7 @@ opacity: 1;
         height: 200px;
         }
         @media only screen and (max-width:640px){
-          height: 100px;
+          height: 150px;
           }
       }
       @media only screen and (max-width:991px){
@@ -470,5 +470,8 @@ justify-content: center;
 align-items: center;
 width: 100%;
 flex-direction: column;
+@media only screen and (max-width:640px){
+  height: auto;
+  }
 }
 

@@ -77,8 +77,15 @@ body {
 .theme-btn:hover {
   background-color: #E32524;
   color: white !important; }
+  .theme-btn:hover:after {
+    top: 0;
+    left: 0; }
 
-.theme-btn-main:after {
+.theme-btn:hover .theme-btn:after {
+  top: 0;
+  left: 0; }
+
+.theme-btn-main::after {
   position: absolute;
   left: 5px;
   top: 5px;
@@ -98,11 +105,16 @@ body {
   padding: 15px 45px;
   border: 0;
   text-transform: capitalize;
-  z-index: 1;
+  z-index: 3;
   position: relative;
   text-decoration: none;
   font-size: 16px;
   transition: all 0.3s; }
+  .theme-btn-main:hover {
+    background: #E32524; }
+    .theme-btn-main:hover::after {
+      top: 0;
+      left: 0; }
 
 .main-btn {
   display: inline-block;
@@ -188,11 +200,11 @@ body {
 
 .reset-password {
   font-size: 14px;
-  color: gray !important;
+  color: rgba(77, 73, 73, 0.5) !important;
   font-weight: 600 !important;
   text-decoration: none; }
   .reset-password:hover {
-    color: #BA3938 !important; }
+    color: gray !important; }
 
 .form-icon {
   position: absolute;
@@ -378,7 +390,7 @@ body {
           height: 200px; } }
       @media only screen and (max-width: 640px) {
         .form-box .right-illus img {
-          height: 100px; } }
+          height: 150px; } }
     @media only screen and (max-width: 991px) {
       .form-box .right-illus {
         top: 70px;
@@ -529,6 +541,9 @@ body {
   align-items: center;
   width: 100%;
   flex-direction: column; }
+  @media only screen and (max-width: 640px) {
+    .login-main {
+      height: auto; } }
 
 .social-top {
   border: 2px solid #F71800; }
