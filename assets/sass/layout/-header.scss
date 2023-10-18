@@ -29,8 +29,9 @@ header{
     color: $primary-dark !important;
  }
  @media only screen and (max-width:991px){
-    padding: 10px 0px;
-    margin-bottom: 10px;
+  font-size: 14px;
+    padding: 10px 20px !important;
+    margin-bottom: 3px;
  }
 }
 .active-nav{
@@ -142,4 +143,14 @@ header{
 }
 .collapse:not(.show){
     display: block;
+}
+.backdrop{
+  background-color: rgba(0, 0, 0, 0.616);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: none;
 }

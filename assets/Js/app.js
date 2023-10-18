@@ -13,11 +13,15 @@ $(".navbar-toggler-icon").on("click",function(){
     $(".close-side").css("display","block");
     $(this).css("display","none");
     $(".navbar-collapse").css("left","0");
+    $(".backdrop").css("display","block");
+    $("body").css("overflow-y","hidden");
 });
 $(".close-side").on("click",function(){
     $(".navbar-toggler-icon").css("display","block");
     $(this).css("display","none");
     $(".navbar-collapse").css("left","-300px");
+    $(".backdrop").css("display","none");
+    $("body").css("overflow-y","auto");
 })
 //   =============================================chat
 $(".chat-btn").on("click", function () {
