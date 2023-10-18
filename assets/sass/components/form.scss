@@ -471,7 +471,7 @@ align-items: center;
 width: 100%;
 flex-direction: column;
 @media only screen and (max-width:640px){
-  height: auto;
+  min-height: auto;
   }
 }
 

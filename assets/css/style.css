@@ -543,7 +543,7 @@ body {
   flex-direction: column; }
   @media only screen and (max-width: 640px) {
     .login-main {
-      height: auto; } }
+      min-height: auto; } }
 
 .social-top {
   border: 2px solid #F71800; }
