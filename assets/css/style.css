@@ -48,6 +48,9 @@ body {
 .text-primary {
   color: #E32524 !important; }
 
+.text-gray {
+  color: #738ea5; }
+
 .theme-btn:after {
   position: absolute;
   left: 5px;
@@ -178,6 +181,17 @@ body {
       outline: none;
       box-shadow: none;
       border-bottom: 1px solid #E32524 !important; }
+
+.code-input {
+  border: 1px solid #B6B3B3 !important;
+  height: 60px;
+  width: 50px;
+  margin: 0px 15px;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  padding: 5px; }
 
 .form-floating > label {
   font-size: 16px;
@@ -430,7 +444,7 @@ body {
 
 .wpo-section-title,
 .wpo-section-title-s2 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center; }
   @media only screen and (max-width: 600px) {
     .wpo-section-title,

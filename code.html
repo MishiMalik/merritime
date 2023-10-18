@@ -117,26 +117,24 @@
                 <div class="form-box--container">
                   <div class="form-box--container-content">
                     <div class="wpo-section-title">
-                      <span>Forget Passwod? </span>
-                      <h2>Let 's Reset</h2>
-                      <div class="section-title-img">
+                      <span>Code Send </span>
+                      <h2>Enter Code</h2>
+                     <div class="section-title-img">
                         <img decoding="async" src="assets/images/Untitled-1 (2) - Copy.png" alt="" class="img-fluid">
                       </div>
                     </div>
-
-                    <div class="form-flields ">
-                      <div class="form-floating mb-3">
-                        <input type="email" class="form-control mb-1" id="floatingInput" placeholder="name@example.com">
-                        <p class="mb-0 pb-0 f-12 w-600 text-gray">Enter Your verified email to reset password</p>
-                        <label for="floatingInput">Email</label>
-                        <div class="form-icon">
-                          <i class="fa-duotone fa-envelopes"></i>
-                        </div>
-                      </div>
+                    <p class="f-12 w-600 text-gray text-center mb-4">Enter the Code that has been send to your email</p>
+                    <div class="d-flex justify-content-center">
+                        <input type="text" maxlength=1  class="code-input"/>
+                        <input type="text" maxlength=1 class="code-input" />
+                        <input type="text" maxlength=1 class="code-input" />
+                        <input type="text" maxlength=1 class="code-input" />
                     </div>
+
+                    
                     
                     <div class="mt-5 pt-3 d-flex justify-content-center">
-                      <a href="code.html" class="theme-btn-main">Continue</a>
+                      <a href="confirm-password.html" class="theme-btn-main">Continue</a>
                     </div>
                   </div>
                 </div>
@@ -167,6 +165,39 @@
 
   <script src="assets/Js/slick.js"></script>
   <script src="assets/Js/app.js"></script>
+  <script>
+    const inputs = document.querySelectorAll("input");
+const codeBlock = document.getElementById("code-block");
+const code = document.getElementById("code");
+const form = document.querySelector("form");
+
+inputs.forEach((input, key) => {
+  if (key !== 0) {
+    input.addEventListener("click", function () {
+      inputs[0].focus();
+    });
+  }
+  input.addEventListener("keyup", function () {
+    if (input.value) {
+      if (key === 3) {
+        // Last one tadaa
+        const userCode = [...inputs].map((input) => input.value).join("");
+        codeBlock.classList.remove("hidden");
+        code.innerText = userCode;
+      } else {
+        inputs[key + 1].focus();
+      }
+    }
+  });
+});
+
+const reset = () => {
+  form.reset();
+  codeBlock.classList.add("hidden");
+  code.innerText = "";
+};
+
+  </script>
 </body>
 
 </html>
