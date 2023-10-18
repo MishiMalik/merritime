@@ -1,4 +1,4 @@
-.theme-btn:after, .view-cart-btn:after, .theme-btn-s3:after, .theme-btn-s4:after{
+.theme-btn:after{
     position: absolute;
     left: 5px;
     top: 5px;
@@ -29,18 +29,44 @@
     color: white !important;
   
 }
+.theme-btn-main:after{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    border: 1px solid #BA3938;
+    z-index: -1;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.theme-btn-main{
+    background: radial-gradient( 100% 100% at 100% 0%, #BA3938 0%, $primary-dark 100% );
+    color: white !important;
+    display: inline-block;
+    font-weight: 600 !important;
+    padding: 15px 45px;
+    border: 0;
+    text-transform: capitalize;
+    z-index: 1;
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s;
+}
 .main-btn{
     display: inline-block;
     outline: 0;
     border: 0;
     cursor: pointer;
     will-change: box-shadow,transform;
-    background: radial-gradient( 100% 100% at 100% 0%, $primary-gradient 0%, $primary-dark 100% );
+    background: radial-gradient( 100% 100% at 100% 0%, #BA3938 0%, $primary-dark 100% );
     box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.253), 0px 7px 13px -3px rgba(45, 35, 66, 0.199), inset 0px -1px 0px rgba(58, 65, 111, 0.288);
-    padding: 0 25px;
+    padding: 8px 25px;
     border-radius: 6px;
     color: #fff;
-    height: 40px;
+    // height: 40px;
     font-size: 16px;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
     transition: box-shadow 0.15s ease,transform 0.15s ease;
@@ -58,22 +84,23 @@
     cursor: pointer;
     will-change: box-shadow,transform;
     background: transparent;
-    padding: 0 25px;
+    padding: 8px 25px;
     border-radius: 6px;
     color: $primary-gradient;
-    height: 40px;
+    // height: 40px;
     font-size: 16px;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
     transition: box-shadow 0.15s ease,transform 0.15s ease;
+    text-decoration: none;
     &:hover {
         border: 1px solid transparent;
         will-change: box-shadow,transform;
         background: radial-gradient( 100% 100% at 100% 0%, $primary-gradient 0%, $primary-dark 100% );
         box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.253), 0px 7px 13px -3px rgba(45, 35, 66, 0.199), inset 0px 0px 0px $primary-dark;
-        padding: 0 25px;
+        padding: 8px 25px;
         border-radius: 6px;
         color: #fff;
-        height: 40px;
+        // height: 40px;
         font-size: 16px;
         text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
         transition: box-shadow 0.1s ease,transform 0.1 ease;

@@ -3,7 +3,11 @@
     max-width: 92%;
    }
 }
+@font-face {
+    font-family: 'Futura PT';
+    src: url('/assets/Futura/FuturaPTMedium.otf') format('opentype');
+  }
 body{
     font-family: 'Nunito Sans', sans-serif;
-   
+
 }
