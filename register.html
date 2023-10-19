@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-column {
+            flex: 1;
+            padding: 20px;
+        }
+        .card-column {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        #preview {
+            max-width: 100%;
+            max-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-column">
+            <h2>Form</h2>
+            <form>
+                <label for="textInput1">Text Input 1:</label>
+                <input type="text" id="textInput1" placeholder="Enter text">
+                <br>
+                <label for="textInput2">Text Input 2:</label>
+                <input type="text" id="textInput2" placeholder="Enter text">
+                <br>
+                <label for="select1">Select 1:</label>
+                <select id="select1">
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                </select>
+                <br>
+                <label for="select2">Select 2:</label>
+                <select id="select2">
+                    <option value="Choice A">Choice A</option>
+                    <option value="Choice B">Choice B</option>
+                    <option value="Choice C">Choice C</option>
+                </select>
+                <br>
+                <label for="dateInput">Date Input:</label>
+                <input type="date" id="dateInput">
+                <br>
+                <label for="imageInput">Image Input:</label>
+                <input type="file" id="imageInput">
+            </form>
+        </div>
+        <div class="card-column">
+            <h2>Card</h2>
+            <div id="cardContent">
+                Text 1: <span id="textValue1"></span>
+                <br>
+                Text 2: <span id="textValue2"></span>
+                <br>
+                Select 1: <span id="selectValue1"></span>
+                <br>
+                Select 2: <span id="selectValue2"></span>
+                <br>
+                Date: <span id="dateValue"></span>
+                <br>
+                Image:
+                <img id="preview" src="" alt="Image Preview">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const textInputs = [
+            document.getElementById("textInput1"),
+            document.getElementById("textInput2")
+        ];
+        const selectInputs = [
+            document.getElementById("select1"),
+            document.getElementById("select2")
+        ];
+        const dateInput = document.getElementById("dateInput");
+        const imageInput = document.getElementById("imageInput");
+        const textValues = [
+            document.getElementById("textValue1"),
+            document.getElementById("textValue2")
+        ];
+        const selectValues = [
+            document.getElementById("selectValue1"),
+            document.getElementById("selectValue2")
+        ];
+        const dateValue = document.getElementById("dateValue");
+        const preview = document.getElementById("preview");
+
+        textInputs.forEach((textInput, index) => {
+            textInput.addEventListener("input", function() {
+                textValues[index].textContent = textInput.value;
+            });
+        });
+
+        selectInputs.forEach((selectInput, index) => {
+            selectInput.addEventListener("change", function() {
+                selectValues[index].textContent = selectInput.value;
+            });
+        });
+
+        dateInput.addEventListener("change", function() {
+            dateValue.textContent = dateInput.value;
+        });
+
+        imageInput.addEventListener("change", function() {
+            const file = imageInput.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>
