@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap5 -->
+  <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.min.css" />
+  <!-- icons -->
+  <link rel="stylesheet" href="assets/icons/icons/all.css" />
+  <link rel="stylesheet" href="assets/icons/icons/sharp-solid.css" />
+  <link rel="stylesheet" href="assets/icons/icons/sharp-regular.css" />
+  <link rel="stylesheet" href="assets/icons/icons/sharp-light.css" />
+  <!-- fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,800;1,6..12,700&display=swap"
+    rel="stylesheet" />
+  <!-- slick -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="social-top"></div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand py-0" href="#">
+          <img src="assets/images/Untitled-1 (2).png" alt="" />
+        </a>
+        <!-- <div class="chat ms-auto me-2 mt-1 d-lg-none chat-btn">
+          <i class="fa-duotone fa-messages"></i>
+        </div> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="d-flex align-items-center">
+            <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-xmark close-side" style="display: none"></i>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse align-items-lg-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item d-lg-none d-flex">
+                  <div class="px-3 mb-3">
+                      <div class="dropdown ">
+                          <a class=" dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="assets/images/ppp.avif" alt="" class="profile-pic">
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#"><i class="fa-duotone fa-user me-2 "></i>
+                                      Profile</a></li>
+                              <li><a class="dropdown-item" href="#"><i
+                                          class="fa-duotone fa-user-pen me-2"></i>
+                                      Edit</a></li>
+                              <li><a class="dropdown-item" href="#"><i
+                                          class="fa-duotone fa-right-from-bracket me-2"></i> Logout</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </li> -->
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"> <i class="fa-duotone fa-house me-2 d-lg-none"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-duotone fa-address-card me-2 d-lg-none "></i>About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-duotone fa-stairs me-2 d-lg-none"></i>How it Works</a>
+              </li>
+              
+              <!-- <li class="nav-item d-lg-none">
+                  <a class="nav-link" href="#"><i class="fa-duotone fa-user-vneck me-2"></i>View Profile</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                  <a class="nav-link" href="#"><i class="fa-duotone fa-user-pen me-2"></i>Edit Profile</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                  <a class="nav-link" href="#"><i class="fa-duotone fa-right-from-bracket me-2"></i>Logout</a>
+              </li> -->
+           
+              <li class="nav-item d-lg-none d-flex flex-column justify-content-center align-items-center text-center">
+                      <a href="register.html" class="main-btn mt-4">Register</a></a>
+              </li>
+          </ul>
+
+
+          <div class="align-items-center d-lg-flex d-none">
+              <!-- <div class="d-lg-block d-none">
+                  <div class="chat me-4 chat-btn mt-1">
+                      <i class="fa-duotone fa-messages"></i>
+                  </div>
+              </div> -->
+              <div class="d-flex mb-2">
+                  <button class="main-btn ms-3">Register</button>
+              </div>
+             
+          </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main class="login-main">
+
+    <section class="form-section w-100">
+      <form action="">
+        <div class="container  mt-lg-4 mt-3 mb-2">
+          <div class="row">
+            <div class="col-lg-7 col-md-10 mx-auto ">
+              <div class="form-box position-relative">
+                <div class="form-box--container">
+                  <div class="form-box--container-content">
+                    <div class="wpo-section-title">
+                      <span>Let’s Meet </span>
+                      <h2>Signin to meet</h2>
+                      <div class="section-title-img">
+                        <img decoding="async" src="assets/images/Untitled-1 (2) - Copy.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
+
+                    <div class="form-flields ">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                        <div class="form-icon">
+                          <i class="fa-duotone fa-envelopes"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-flields ">
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Password</label>
+                        <div class="form-icon">
+                          <i class="fa-duotone fa-lock"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Remember Me
+                        </label>
+                      </div>
+                      <div>
+                        <a href="forget-password.html" class="reset-password">Forget Password</a>
+                      </div>
+                    </div>
+                    <div class="mt-5 pt-3 d-flex justify-content-center">
+                      <a href="registered.html" class="theme-btn-main">Sign in</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-illus d-md-block d-none">
+                  <img src="assets/images/illustrations/Group 1.png" alt="" class="img-fluid">
+                </div>
+                <div class=" d-md-block d-none">
+                  <img src="assets/images/3D-icon/couple-holding-flower-bouquet-3430255-3430255%400.png" alt="" class="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+  <div class="backdrop"></div>
+  <!-- Jquery -->
+  <script src="assets/Js/jquery.js"></script>
+  <!-- Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"
+    integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- bootstrap5 -->
+  <script src="assets/bootstrap5/js/bootstrap.min.js"></script>
+  <!-- slick -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="assets/Js/slick.js"></script>
+  <script src="assets/Js/app.js"></script>
+</body>
+
+</html>

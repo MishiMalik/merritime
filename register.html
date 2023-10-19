@@ -1,125 +1,412 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <style>
-        .container {
-            display: flex;
-            justify-content: space-between;
-        }
-        .form-column {
-            flex: 1;
-            padding: 20px;
-        }
-        .card-column {
-            flex: 1;
-            padding: 20px;
-            border: 1px solid #ccc;
-        }
-        #preview {
-            max-width: 100%;
-            max-height: 200px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap5 -->
+  <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.min.css" />
+  <!-- icons -->
+  <link rel="stylesheet" href="assets/icons/icons/all.css" />
+  <link rel="stylesheet" href="assets/icons/icons/sharp-solid.css" />
+  <link rel="stylesheet" href="assets/icons/icons/sharp-regular.css" />
+  <link rel="stylesheet" href="assets/icons/icons/sharp-light.css" />
+  <!-- fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,800;1,6..12,700&display=swap"
+    rel="stylesheet" />
+  <!-- slick -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Document</title>
 </head>
-<body>
-    <div class="container">
-        <div class="form-column">
-            <h2>Form</h2>
-            <form>
-                <label for="textInput1">Text Input 1:</label>
-                <input type="text" id="textInput1" placeholder="Enter text">
-                <br>
-                <label for="textInput2">Text Input 2:</label>
-                <input type="text" id="textInput2" placeholder="Enter text">
-                <br>
-                <label for="select1">Select 1:</label>
-                <select id="select1">
-                    <option value="Option 1">Option 1</option>
-                    <option value="Option 2">Option 2</option>
-                    <option value="Option 3">Option 3</option>
-                </select>
-                <br>
-                <label for="select2">Select 2:</label>
-                <select id="select2">
-                    <option value="Choice A">Choice A</option>
-                    <option value="Choice B">Choice B</option>
-                    <option value="Choice C">Choice C</option>
-                </select>
-                <br>
-                <label for="dateInput">Date Input:</label>
-                <input type="date" id="dateInput">
-                <br>
-                <label for="imageInput">Image Input:</label>
-                <input type="file" id="imageInput">
-            </form>
-        </div>
-        <div class="card-column">
-            <h2>Card</h2>
-            <div id="cardContent">
-                Text 1: <span id="textValue1"></span>
-                <br>
-                Text 2: <span id="textValue2"></span>
-                <br>
-                Select 1: <span id="selectValue1"></span>
-                <br>
-                Select 2: <span id="selectValue2"></span>
-                <br>
-                Date: <span id="dateValue"></span>
-                <br>
-                Image:
-                <img id="preview" src="" alt="Image Preview">
+
+<body class="position-relative">
+  <header class="header">
+    <div class="social-top"></div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand py-0" href="#">
+          <img src="assets/images/Untitled-1 (2).png" alt="" />
+        </a>
+   
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="d-flex align-items-center">
+            <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-xmark close-side" style="display: none"></i>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse align-items-lg-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+             
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"> <i class="fa-duotone fa-house me-2 d-lg-none"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-duotone fa-address-card me-2 d-lg-none "></i>About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-duotone fa-stairs me-2 d-lg-none"></i>How it Works</a>
+              </li>
+              
+           
+              <li class="nav-item d-lg-none d-flex flex-column justify-content-center align-items-center text-center">
+                      <a href="login.html" class="main-btn mt-4">Login</a></a>
+              </li>
+          </ul>
+
+
+          <div class="align-items-center d-lg-flex d-none">
+              
+              <div class="d-flex mb-2">
+                  <a href="login.html" class="main-btn ms-3">Login</a>
+              </div>
+             
+          </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main class="login-main position-relative">
+    <section class="form-section w-100">
+        <div class="container  mt-lg-4 mt-3 mb-2">
+          <div class="row">
+            <div class="col-lg-10 col-md-11 mx-auto ">
+              <div class="form-box2 position-relative">
+                <div class="form-box2--container">
+                  <div class="form-box2--container-content">
+                    <div class="wpo-section-title">
+                      <span>Let’s Meet </span>
+                      <h2>Get Registered</h2>
+                      <div class="section-title-img">
+                        <img decoding="async" src="assets/images/Untitled-1 (2) - Copy.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="steps pt-4 pb-3">
+                      <ul id="progressbar">
+                        <li class="active">Personal Info</li>
+                        <li>Credentials </li>
+                        <li>Education</li>
+                        <li>Residence</li>
+                        <li>Occupation</li>
+                    </div>
+                    </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <form class="steps" accept-charset="UTF-8" enctype="multipart/form-data" novalidate="">
+                            
+                                <!-- USER INFORMATION FIELD SET -->
+                                <fieldset>
+                                    <h2 class="fs-title">Persnal Information</h2>
+                                    <h3 class="fs-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, molestiae.</h3>
+                                    <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                        
+                                    <!-- End Total Number of Constituents in Your Database Field -->
+                                    <input type="button" data-page="1" name="next" class="next action-button" value="Next" />
+                        
+                                </fieldset>
+                                <!-- ACQUISITION FIELD SET -->
+                                <fieldset>
+                                    <h2 class="fs-title">Credentials</h2>
+                                    <h3 class="fs-subtitle">How have you been doing in acquiring donors?</h3>
+                                    <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <!-- End Calc of Total Number of Donors Fields -->
+                                    <input type="button" data-page="2" name="previous" class="previous action-button" value="Previous" />
+                                    <input type="button" data-page="2" name="next" class="next action-button" value="Next" />
+                                </fieldset>
+                                <!-- Cultivation FIELD SET -->
+                                <fieldset>
+                                    <h2 class="fs-title">Education</h2>
+                                    <h3 class="fs-subtitle">How have you been nurturing donors to get better donations?</h3>
+                                    <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <!-- End Average Gift Size Perchent Change Field -->
+                                    <input type="button" data-page="3" name="previous" class="previous action-button" value="Previous" />
+                                    <input type="button" data-page="3" name="next" class="next action-button" value="Next" />
+                                </fieldset>
+                                <!-- Cultivation2 FIELD SET -->
+                                <fieldset>
+                                    <h2 class="fs-title">Residence</h2>
+                                    <h3 class="fs-subtitle">Let's talk about your donations as a whole</h3>
+                                    <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <!-- End Average Gift Size Percent Change Field 2 -->
+                                    <input type="button" data-page="4" name="previous" class="previous action-button" value="Previous" />
+                                    <input type="button" data-page="4" name="next" class="next action-button" value="Next" />
+                                </fieldset>
+                                <!-- RETENTION FIELD SET -->
+                                <fieldset>
+                                    <h2 class="fs-title">Occupation</h2>
+                                    <h3 class="fs-subtitle">How long can you keep your donors and their donations?</h3>
+                                    <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-flields ">
+                                        <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Email</label>
+                                          <div class="form-icon">
+                                            <i class="fa-duotone fa-envelopes"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <!-- End Final Calc -->
+                                    <input type="button" data-page="5" name="previous" class="previous action-button" value="Previous" />
+                                    <input id="submit" class="hs-button primary large action-button next" type="submit" value="Submit">
+                                </fieldset>
+                        
+                        </form>
+                        
+                            </div>
+                        <div class="col-lg-4  mx-auto">
+                          <div class="px-3">
+                            <div class="couple-card position-relative">
+                                <div class="couple-card-deatils">
+                                   
+                                    <div class="d-flex align-items-center view-deatils ms-auto">
+                                        <i class="fa-duotone fa-eye"></i> 12
+                                    </div>
+                                </div>
+                                <div class="carousel__slide">
+                                    
+                                    <figure>
+                                        <div>
+                                            <img src="assets/images/girls/g7.jpg" alt="">
+                                          
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="couple-card-content">
+                                   <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="mb-0 pb-0 f-16" >Amaira Khan</h5>
+                                    <div class="not-verified">Not Verified</div>
+                                   </div>
+                                    <div class="d-flex align-items-center flex-wrap mb-2 pb-1">
+                                        <div class="couple-tag">
+                                            BSc
+                                          </div>
+                                          <div class="couple-tag">
+                                              IT Professional
+                                          </div>
+                                          <div class="couple-tag">
+                                              Islamabad, Pakisatn
+                                          </div>
+                                          <div class="couple-tag">
+                                             Unmarried
+                                          </div>
+                                    </div>
+                                    <hr class="line">
+                                    <div class="couple-buttons mt-3 d-flex align-items-center justify-content-evenly">
+                                       <a href="" class="disabled">Chat Now</a>
+                                       <a href="" class="">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+    </section>
+    
+  </main>
+  <div class="right-illus2 d-md-block d-none">
+    <img src="assets/images/3D-icon/Group 8 (1).png" alt="" class="img-fluid">
+  </div>
+  <div class="left-illus2 d-md-block d-none">
+    <img src="assets/images/3D-icon/Group 7 (2).png" alt="" class="img-fluid">
+  </div>
+  <div class="backdrop"></div>
+  <!-- Jquery -->
+  <script src="assets/Js/jquery.js"></script>
+  <!-- Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"
+    integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- bootstrap5 -->
+  <script src="assets/bootstrap5/js/bootstrap.min.js"></script>
+  <!-- slick -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script>
-        const textInputs = [
-            document.getElementById("textInput1"),
-            document.getElementById("textInput2")
-        ];
-        const selectInputs = [
-            document.getElementById("select1"),
-            document.getElementById("select2")
-        ];
-        const dateInput = document.getElementById("dateInput");
-        const imageInput = document.getElementById("imageInput");
-        const textValues = [
-            document.getElementById("textValue1"),
-            document.getElementById("textValue2")
-        ];
-        const selectValues = [
-            document.getElementById("selectValue1"),
-            document.getElementById("selectValue2")
-        ];
-        const dateValue = document.getElementById("dateValue");
-        const preview = document.getElementById("preview");
-
-        textInputs.forEach((textInput, index) => {
-            textInput.addEventListener("input", function() {
-                textValues[index].textContent = textInput.value;
-            });
-        });
-
-        selectInputs.forEach((selectInput, index) => {
-            selectInput.addEventListener("change", function() {
-                selectValues[index].textContent = selectInput.value;
-            });
-        });
-
-        dateInput.addEventListener("change", function() {
-            dateValue.textContent = dateInput.value;
-        });
-
-        imageInput.addEventListener("change", function() {
-            const file = imageInput.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    preview.src = e.target.result;
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-    </script>
+  <script src="assets/Js/slick.js"></script>
+  <script src="assets/Js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="assets/Js/register.js"></script>
 </body>
+
 </html>
