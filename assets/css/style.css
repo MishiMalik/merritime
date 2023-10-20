@@ -982,9 +982,9 @@ header {
   position: fixed;
   right: -80px;
   bottom: -5px; }
-  @media only screen and (min-width: 1600px) {
+  @media only screen and (min-width: 1599px) {
     .right-illus2 {
-      right: 30px; } }
+      right: 15px; } }
   @media only screen and (min-width: 1700px) {
     .right-illus2 {
       position: absolute;
