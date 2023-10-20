@@ -20,7 +20,8 @@
     integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
+  <!-- select 2 -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <!-- css -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <title>Document</title>
@@ -34,7 +35,6 @@
         <a class="navbar-brand py-0" href="#">
           <img src="assets/images/Untitled-1 (2).png" alt="" />
         </a>
-   
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <div class="d-flex align-items-center">
@@ -44,353 +44,804 @@
         </button>
         <div class="collapse navbar-collapse align-items-lg-center" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-             
-              <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html"> <i class="fa-duotone fa-house me-2 d-lg-none"></i>Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa-duotone fa-address-card me-2 d-lg-none "></i>About Us</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa-duotone fa-stairs me-2 d-lg-none"></i>How it Works</a>
-              </li>
-              
-           
-              <li class="nav-item d-lg-none d-flex flex-column justify-content-center align-items-center text-center">
-                      <a href="login.html" class="main-btn mt-4">Login</a></a>
-              </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"> <i
+                  class="fa-duotone fa-house me-2 d-lg-none"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-duotone fa-address-card me-2 d-lg-none "></i>About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-duotone fa-stairs me-2 d-lg-none"></i>How it Works</a>
+            </li>
+
+
+            <li class="nav-item d-lg-none d-flex flex-column justify-content-center align-items-center text-center">
+              <a href="login.html" class="main-btn mt-4">Login</a></a>
+            </li>
           </ul>
 
 
           <div class="align-items-center d-lg-flex d-none">
-              
-              <div class="d-flex mb-2">
-                  <a href="login.html" class="main-btn ms-3">Login</a>
-              </div>
-             
+
+            <div class="d-flex mb-2">
+              <a href="login.html" class="main-btn ms-3">Login</a>
+            </div>
+
           </div>
-      </div>
+        </div>
       </div>
     </nav>
   </header>
   <main class="login-main position-relative">
     <section class="form-section w-100">
-        <div class="container  mt-lg-4 mt-3 mb-2">
-          <div class="row">
-            <div class="col-lg-10 col-md-11 mx-auto ">
-              <div class="form-box2 position-relative">
-                <div class="form-box2--container">
-                  <div class="form-box2--container-content">
-                    <div class="wpo-section-title">
-                      <span>Let’s Meet </span>
-                      <h2>Get Registered</h2>
-                      <div class="section-title-img">
-                        <img decoding="async" src="assets/images/Untitled-1 (2) - Copy.png" alt="" class="img-fluid">
-                      </div>
-                      <div class="steps pt-4 pb-3">
+      <div class="container  mt-lg-4 mt-3 mb-2">
+        <div class="row">
+          <div class="col-lg-10 col-md-11 mx-auto ">
+            <div class="form-box2 position-relative">
+              <div class="form-box2--container">
+                <div class="form-box2--container-content">
+                  <div class="wpo-section-title">
+                    <span>Let’s Meet </span>
+                    <h2>Get Registered</h2>
+                    <div class="section-title-img">
+                      <img decoding="async" src="assets/images/Untitled-1 (2) - Copy.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="steps pt-4 pb-3">
                       <ul id="progressbar">
                         <li class="active">Personal Info</li>
                         <li>Credentials </li>
                         <li>Education</li>
                         <li>Residence</li>
-                        <li>Occupation</li>
+                        <li>profession</li>
                     </div>
                     </ul>
-                    </div>
+                  </div>
 
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <form class="steps" accept-charset="UTF-8" enctype="multipart/form-data" novalidate="">
-                            
-                                <!-- USER INFORMATION FIELD SET -->
-                                <fieldset>
-                                    <h2 class="fs-title">Persnal Information</h2>
-                                    <h3 class="fs-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, molestiae.</h3>
-                                    <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                        
-                                    <!-- End Total Number of Constituents in Your Database Field -->
-                                    <input type="button" data-page="1" name="next" class="next action-button" value="Next" />
-                        
-                                </fieldset>
-                                <!-- ACQUISITION FIELD SET -->
-                                <fieldset>
-                                    <h2 class="fs-title">Credentials</h2>
-                                    <h3 class="fs-subtitle">How have you been doing in acquiring donors?</h3>
-                                    <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    <!-- End Calc of Total Number of Donors Fields -->
-                                    <input type="button" data-page="2" name="previous" class="previous action-button" value="Previous" />
-                                    <input type="button" data-page="2" name="next" class="next action-button" value="Next" />
-                                </fieldset>
-                                <!-- Cultivation FIELD SET -->
-                                <fieldset>
-                                    <h2 class="fs-title">Education</h2>
-                                    <h3 class="fs-subtitle">How have you been nurturing donors to get better donations?</h3>
-                                    <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    <!-- End Average Gift Size Perchent Change Field -->
-                                    <input type="button" data-page="3" name="previous" class="previous action-button" value="Previous" />
-                                    <input type="button" data-page="3" name="next" class="next action-button" value="Next" />
-                                </fieldset>
-                                <!-- Cultivation2 FIELD SET -->
-                                <fieldset>
-                                    <h2 class="fs-title">Residence</h2>
-                                    <h3 class="fs-subtitle">Let's talk about your donations as a whole</h3>
-                                    <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    <!-- End Average Gift Size Percent Change Field 2 -->
-                                    <input type="button" data-page="4" name="previous" class="previous action-button" value="Previous" />
-                                    <input type="button" data-page="4" name="next" class="next action-button" value="Next" />
-                                </fieldset>
-                                <!-- RETENTION FIELD SET -->
-                                <fieldset>
-                                    <h2 class="fs-title">Occupation</h2>
-                                    <h3 class="fs-subtitle">How long can you keep your donors and their donations?</h3>
-                                    <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="form-flields ">
-                                        <div class="form-floating mb-3">
-                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                          <label for="floatingInput">Email</label>
-                                          <div class="form-icon">
-                                            <i class="fa-duotone fa-envelopes"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    <!-- End Final Calc -->
-                                    <input type="button" data-page="5" name="previous" class="previous action-button" value="Previous" />
-                                    <input id="submit" class="hs-button primary large action-button next" type="submit" value="Submit">
-                                </fieldset>
-                        
-                        </form>
-                        
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <form class="steps" accept-charset="UTF-8" enctype="multipart/form-data" novalidate="">
+
+                        <!-- Persnal Information FIELD SET -->
+                        <fieldset>
+                          <h2 class="fs-title">Persnal Information</h2>
+                          <h3 class="fs-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                            molestiae.</h3>
+                          <div class="row">
+
+                            <div class="col-lg-12">
+                              <div class="form-flields ">
+                                <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="first-name" placeholder="Name">
+                                  <label for="first-name">First Name</label>
+                                  <div class="form-icon">
+                                    <i class="fa-duotone fa-user"></i>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                        <div class="col-lg-4  mx-auto">
-                          <div class="px-3">
-                            <div class="couple-card position-relative">
-                                <div class="couple-card-deatils">
-                                   
-                                    <div class="d-flex align-items-center view-deatils ms-auto">
-                                        <i class="fa-duotone fa-eye"></i> 12
-                                    </div>
+                            <div class="col-lg-12">
+                              <div class="form-flields ">
+                                <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="last-name" placeholder="name">
+                                  <label for="last-name">Last Name</label>
+                                  <div class="form-icon">
+                                    <i class="fa-duotone fa-user"></i>
+                                  </div>
                                 </div>
-                                <div class="carousel__slide">
-                                    
-                                    <figure>
-                                        <div>
-                                            <img src="assets/images/girls/g7.jpg" alt="">
-                                          
-                                        </div>
-                                    </figure>
+                              </div>
+                            </div>
+                            <div class="col-lg-12 position-relative custome-input-picture">
+                              <div class="file pic-input mb-3 mt-2 w-100 pt-1" style="position: relative;">
+                                <input type="file" class="file-input" id="file1" aria-label="File browser example">
+                               
+                                <label for="file1" class="custom-file-upload upload-text">
+                                  <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture <Picture>
+                                    </Picture></span>
+                                </label>
+                                <span class="selected-file-name" style="display: none;"></span>
+                                <span class="delete-icon" style="display: none;">&times;</span>
+                              </div>
+                              <div class="form-icon-pic">
+                                <i class="fa-duotone fa-image"></i>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="form-flields ">
+                                <div class="form-floating mb-3">
+                                  <input type="text" class="form-control text-black floatingInput2" id="floatingInput"
+                                    onfocus="(this.type = 'date')" placeholder="DOB">
+                                  <label for="floatingInput">Date of Birth</label>
+                                  <div class="form-icon">
+                                    <i class="fa-duotone fa-calendar-day"></i>
+                                  </div>
                                 </div>
-                                <div class="couple-card-content">
-                                   <div class="d-flex align-items-center justify-content-between mb-3">
-                                    <h5 class="mb-0 pb-0 f-16" >Amaira Khan</h5>
-                                    <div class="not-verified">Not Verified</div>
-                                   </div>
-                                    <div class="d-flex align-items-center flex-wrap mb-2 pb-1">
-                                        <div class="couple-tag">
-                                            BSc
-                                          </div>
-                                          <div class="couple-tag">
-                                              IT Professional
-                                          </div>
-                                          <div class="couple-tag">
-                                              Islamabad, Pakisatn
-                                          </div>
-                                          <div class="couple-tag">
-                                             Unmarried
-                                          </div>
-                                    </div>
-                                    <hr class="line">
-                                    <div class="couple-buttons mt-3 d-flex align-items-center justify-content-evenly">
-                                       <a href="" class="disabled">Chat Now</a>
-                                       <a href="" class="">Details</a>
-                                    </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="form-flields ">
+                                <div class="form-flields">
+                                  <div class="form-floating mb-3">
+                                    <select class="form-select" id="selectGender"
+                                      aria-label="Floating label select example">
+                                      <option value="male">Male</option>
+                                      <option value="female">Female</option>
+                                    </select>
+                                    <label for="selectGender">Select Gender</label>
+                                  </div>
                                 </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="form-flields">
+                                <div class="form-floating mb-3">
+                                  <select class="form-select" id="selectReligion"
+                                    aria-label="Floating label select example">
+                                    <option value="christianity">Christianity</option>
+                                    <option value="islam">Islam</option>
+                                    <option value="hinduism">Hinduism</option>
+                                    <option value="buddhism">Buddhism</option>
+                                    <option value="judaism">Judaism</option>
+                                    <option value="sikhism">Sikhism</option>
+
+                                  </select>
+                                  <label for="selectReligion">Select Religion</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-12 my-2 px-3">
+                              <div class="d-flex  justify-content-between px-1">
+                                <p class="mb-0 pb-0 f-16 w-500 text-gray">Are you married before and looking for another
+                                  marriage?</p>
+                                <div class="d-flex flex-wrap">
+                                  <div class="form-check ms-3">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                      id="flexRadioDefault1">
+                                    <label class="form-check-label text-gray" for="flexRadioDefault1">
+                                      Yes
+                                    </label>
+                                  </div>
+                                  <div class="form-check ms-4">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                      id="flexRadioDefault2" checked>
+                                    <label class="form-check-label text-gray" for="flexRadioDefault2">
+                                      No
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="form-flields ">
+                                <div class="form-floating">
+                                  <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea2" rows="3" style="height: 100px;"></textarea>
+                                  <label for="floatingTextarea2">Describe Yourself</label>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <input type="button" data-page="1" name="next" class="next action-button mt-3" value="Next" />
+
+                        </fieldset>
+                        <!-- Credentials FIELD SET -->
+                        <fieldset>
+                          <h2 class="fs-title">Credentials</h2>
+                          <h3 class="fs-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                            molestiae.</h3>
+                          <div class="form-flields ">
+                            <div class="form-floating mb-3">
+                              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                              <label for="email">Email</label>
+                              <div class="form-icon">
+                                <i class="fa-duotone fa-envelopes"></i>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                    </div>
-                    
-                  </div>
-                </div>
-                
+                          <div class="form-flields ">
+                            <div class="form-floating mb-3">
+                              <input type="email" class="form-control" id="password" placeholder="name@example.com">
+                              <label for="password">Password</label>
+                              <div class="form-icon">
+                                <i class="fa-duotone fa-lock"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-flields ">
+                            <div class="form-floating mb-3">
+                              <input type="email" class="form-control" id="password" placeholder="name@example.com">
+                              <label for="password">Confirm password</label>
+                              <div class="form-icon">
+                                <i class="fa-duotone fa-lock"></i>
+                              </div>
+                            </div>
+                          </div>
+
+                          <input type="button" data-page="2" name="previous" class="previous action-button mt-3"
+                            value="Previous" />
+                          <input type="button" data-page="2" name="next" class="next action-button mt-3" value="Next" />
+                        </fieldset>
+                        <!-- EducationFIELD SET -->
+                        <fieldset>
+                          <h2 class="fs-title">Education</h2>
+                          <h3 class="fs-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                            molestiae.</h3>
+                          <div class="row">
+                            <div class="col-lg-12 my-2 px-2">
+                              <p class="mb-0 pb-0 f-16 w-500 text-gray">Are you educated?</p>
+                              <div class=" mt-2">
+                                <div class="form-check ">
+                                  <input class="form-check-input" type="radio" name="educated" id="yes-educated"
+                                    checked>
+                                  <label class="form-check-label text-gray" for="yes-edicated">
+                                    Yes
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="educated" id="not-educated">
+                                  <label class="form-check-label text-gray" for="not-educated">
+                                    No
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-12 mt-3" id="education-level">
+                              <div class="form-flields">
+                                <div class="form-floating mb-3">
+                                  <select class="form-select" id="selectEducation"
+                                    aria-label="Floating label select example">
+                                    <option value="highschool">High School</option>
+                                    <option value="undergraduate">Undergraduate</option>
+                                    <option value="graduate">Graduate</option>
+                                    <option value="postgraduate">Postgraduate</option>
+                                    <option value="doctorate">Doctorate</option>
+                                    <option value="other">Other</option>
+                                  </select>
+                                  <label for="selectEducation">Education Level</label>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <input type="button" data-page="3" name="previous" class="previous action-button mt-3"
+                            value="Previous" />
+                          <input type="button" data-page="3" name="next" class="next action-button mt-3" value="Next" />
+                        </fieldset>
+                        <!-- Residence FIELD SET -->
+                        <fieldset>
+                          <h2 class="fs-title">Residence</h2>
+                          <h3 class="fs-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                            molestiae.</h3>
+
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <label class="f-14 w-500 text-gray px-2">Country</label>
+                              <div class="form-floating mb-3 ">
+                                <select class="js-example-basic-single " name="state">
+                                  <option value="Afghanistan">Afghanistan</option>
+                                  <option value="Albania">Albania</option>
+                                  <option value="Algeria">Algeria</option>
+                                  <option value="American Samoa">American Samoa</option>
+                                  <option value="Andorra">Andorra</option>
+                                  <option value="Angola">Angola</option>
+                                  <option value="Anguilla">Anguilla</option>
+                                  <option value="Antartica">Antarctica</option>
+                                  <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                  <option value="Argentina">Argentina</option>
+                                  <option value="Armenia">Armenia</option>
+                                  <option value="Aruba">Aruba</option>
+                                  <option value="Australia">Australia</option>
+                                  <option value="Austria">Austria</option>
+                                  <option value="Azerbaijan">Azerbaijan</option>
+                                  <option value="Bahamas">Bahamas</option>
+                                  <option value="Bahrain">Bahrain</option>
+                                  <option value="Bangladesh">Bangladesh</option>
+                                  <option value="Barbados">Barbados</option>
+                                  <option value="Belarus">Belarus</option>
+                                  <option value="Belgium">Belgium</option>
+                                  <option value="Belize">Belize</option>
+                                  <option value="Benin">Benin</option>
+                                  <option value="Bermuda">Bermuda</option>
+                                  <option value="Bhutan">Bhutan</option>
+                                  <option value="Bolivia">Bolivia</option>
+                                  <option value="Bosnia and Herzegowina">Bosnia and Herzegowina</option>
+                                  <option value="Botswana">Botswana</option>
+                                  <option value="Bouvet Island">Bouvet Island</option>
+                                  <option value="Brazil">Brazil</option>
+                                  <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                  <option value="Brunei Darussalam">Brunei Darussalam</option>
+                                  <option value="Bulgaria">Bulgaria</option>
+                                  <option value="Burkina Faso">Burkina Faso</option>
+                                  <option value="Burundi">Burundi</option>
+                                  <option value="Cambodia">Cambodia</option>
+                                  <option value="Cameroon">Cameroon</option>
+                                  <option value="Canada">Canada</option>
+                                  <option value="Cape Verde">Cape Verde</option>
+                                  <option value="Cayman Islands">Cayman Islands</option>
+                                  <option value="Central African Republic">Central African Republic</option>
+                                  <option value="Chad">Chad</option>
+                                  <option value="Chile">Chile</option>
+                                  <option value="China">China</option>
+                                  <option value="Christmas Island">Christmas Island</option>
+                                  <option value="Cocos Islands">Cocos (Keeling) Islands</option>
+                                  <option value="Colombia">Colombia</option>
+                                  <option value="Comoros">Comoros</option>
+                                  <option value="Congo">Congo</option>
+                                  <option value="Congo">Congo, the Democratic Republic of the</option>
+                                  <option value="Cook Islands">Cook Islands</option>
+                                  <option value="Costa Rica">Costa Rica</option>
+                                  <option value="Cota D'Ivoire">Cote d'Ivoire</option>
+                                  <option value="Croatia">Croatia (Hrvatska)</option>
+                                  <option value="Cuba">Cuba</option>
+                                  <option value="Cyprus">Cyprus</option>
+                                  <option value="Czech Republic">Czech Republic</option>
+                                  <option value="Denmark">Denmark</option>
+                                  <option value="Djibouti">Djibouti</option>
+                                  <option value="Dominica">Dominica</option>
+                                  <option value="Dominican Republic">Dominican Republic</option>
+                                  <option value="East Timor">East Timor</option>
+                                  <option value="Ecuador">Ecuador</option>
+                                  <option value="Egypt">Egypt</option>
+                                  <option value="El Salvador">El Salvador</option>
+                                  <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                  <option value="Eritrea">Eritrea</option>
+                                  <option value="Estonia">Estonia</option>
+                                  <option value="Ethiopia">Ethiopia</option>
+                                  <option value="Falkland Islands">Falkland Islands (Malvinas)</option>
+                                  <option value="Faroe Islands">Faroe Islands</option>
+                                  <option value="Fiji">Fiji</option>
+                                  <option value="Finland">Finland</option>
+                                  <option value="France">France</option>
+                                  <option value="France Metropolitan">France, Metropolitan</option>
+                                  <option value="French Guiana">French Guiana</option>
+                                  <option value="French Polynesia">French Polynesia</option>
+                                  <option value="French Southern Territories">French Southern Territories</option>
+                                  <option value="Gabon">Gabon</option>
+                                  <option value="Gambia">Gambia</option>
+                                  <option value="Georgia">Georgia</option>
+                                  <option value="Germany">Germany</option>
+                                  <option value="Ghana">Ghana</option>
+                                  <option value="Gibraltar">Gibraltar</option>
+                                  <option value="Greece">Greece</option>
+                                  <option value="Greenland">Greenland</option>
+                                  <option value="Grenada">Grenada</option>
+                                  <option value="Guadeloupe">Guadeloupe</option>
+                                  <option value="Guam">Guam</option>
+                                  <option value="Guatemala">Guatemala</option>
+                                  <option value="Guinea">Guinea</option>
+                                  <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                  <option value="Guyana">Guyana</option>
+                                  <option value="Haiti">Haiti</option>
+                                  <option value="Heard and McDonald Islands">Heard and Mc Donald Islands</option>
+                                  <option value="Holy See">Holy See (Vatican City State)</option>
+                                  <option value="Honduras">Honduras</option>
+                                  <option value="Hong Kong">Hong Kong</option>
+                                  <option value="Hungary">Hungary</option>
+                                  <option value="Iceland">Iceland</option>
+                                  <option value="India">India</option>
+                                  <option value="Indonesia">Indonesia</option>
+                                  <option value="Iran">Iran (Islamic Republic of)</option>
+                                  <option value="Iraq">Iraq</option>
+                                  <option value="Ireland">Ireland</option>
+                                  <option value="Israel">Israel</option>
+                                  <option value="Italy">Italy</option>
+                                  <option value="Jamaica">Jamaica</option>
+                                  <option value="Japan">Japan</option>
+                                  <option value="Jordan">Jordan</option>
+                                  <option value="Kazakhstan">Kazakhstan</option>
+                                  <option value="Kenya">Kenya</option>
+                                  <option value="Kiribati">Kiribati</option>
+                                  <option value="Democratic People's Republic of Korea">Korea, Democratic People's
+                                    Republic of</option>
+                                  <option value="Korea">Korea, Republic of</option>
+                                  <option value="Kuwait">Kuwait</option>
+                                  <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                  <option value="Lao">Lao People's Democratic Republic</option>
+                                  <option value="Latvia">Latvia</option>
+                                  <option value="Lebanon" selected>Lebanon</option>
+                                  <option value="Lesotho">Lesotho</option>
+                                  <option value="Liberia">Liberia</option>
+                                  <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                                  <option value="Liechtenstein">Liechtenstein</option>
+                                  <option value="Lithuania">Lithuania</option>
+                                  <option value="Luxembourg">Luxembourg</option>
+                                  <option value="Macau">Macau</option>
+                                  <option value="Macedonia">Macedonia, The Former Yugoslav Republic of</option>
+                                  <option value="Madagascar">Madagascar</option>
+                                  <option value="Malawi">Malawi</option>
+                                  <option value="Malaysia">Malaysia</option>
+                                  <option value="Maldives">Maldives</option>
+                                  <option value="Mali">Mali</option>
+                                  <option value="Malta">Malta</option>
+                                  <option value="Marshall Islands">Marshall Islands</option>
+                                  <option value="Martinique">Martinique</option>
+                                  <option value="Mauritania">Mauritania</option>
+                                  <option value="Mauritius">Mauritius</option>
+                                  <option value="Mayotte">Mayotte</option>
+                                  <option value="Mexico">Mexico</option>
+                                  <option value="Micronesia">Micronesia, Federated States of</option>
+                                  <option value="Moldova">Moldova, Republic of</option>
+                                  <option value="Monaco">Monaco</option>
+                                  <option value="Mongolia">Mongolia</option>
+                                  <option value="Montserrat">Montserrat</option>
+                                  <option value="Morocco">Morocco</option>
+                                  <option value="Mozambique">Mozambique</option>
+                                  <option value="Myanmar">Myanmar</option>
+                                  <option value="Namibia">Namibia</option>
+                                  <option value="Nauru">Nauru</option>
+                                  <option value="Nepal">Nepal</option>
+                                  <option value="Netherlands">Netherlands</option>
+                                  <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                  <option value="New Caledonia">New Caledonia</option>
+                                  <option value="New Zealand">New Zealand</option>
+                                  <option value="Nicaragua">Nicaragua</option>
+                                  <option value="Niger">Niger</option>
+                                  <option value="Nigeria">Nigeria</option>
+                                  <option value="Niue">Niue</option>
+                                  <option value="Norfolk Island">Norfolk Island</option>
+                                  <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                  <option value="Norway">Norway</option>
+                                  <option value="Oman">Oman</option>
+                                  <option value="Pakistan">Pakistan</option>
+                                  <option value="Palau">Palau</option>
+                                  <option value="Panama">Panama</option>
+                                  <option value="Papua New Guinea">Papua New Guinea</option>
+                                  <option value="Paraguay">Paraguay</option>
+                                  <option value="Peru">Peru</option>
+                                  <option value="Philippines">Philippines</option>
+                                  <option value="Pitcairn">Pitcairn</option>
+                                  <option value="Poland">Poland</option>
+                                  <option value="Portugal">Portugal</option>
+                                  <option value="Puerto Rico">Puerto Rico</option>
+                                  <option value="Qatar">Qatar</option>
+                                  <option value="Reunion">Reunion</option>
+                                  <option value="Romania">Romania</option>
+                                  <option value="Russia">Russian Federation</option>
+                                  <option value="Rwanda">Rwanda</option>
+                                  <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                  <option value="Saint LUCIA">Saint LUCIA</option>
+                                  <option value="Saint Vincent">Saint Vincent and the Grenadines</option>
+                                  <option value="Samoa">Samoa</option>
+                                  <option value="San Marino">San Marino</option>
+                                  <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                  <option value="Saudi Arabia">Saudi Arabia</option>
+                                  <option value="Senegal">Senegal</option>
+                                  <option value="Seychelles">Seychelles</option>
+                                  <option value="Sierra">Sierra Leone</option>
+                                  <option value="Singapore">Singapore</option>
+                                  <option value="Slovakia">Slovakia (Slovak Republic)</option>
+                                  <option value="Slovenia">Slovenia</option>
+                                  <option value="Solomon Islands">Solomon Islands</option>
+                                  <option value="Somalia">Somalia</option>
+                                  <option value="South Africa">South Africa</option>
+                                  <option value="South Georgia">South Georgia and the South Sandwich Islands</option>
+                                  <option value="Span">Spain</option>
+                                  <option value="SriLanka">Sri Lanka</option>
+                                  <option value="St. Helena">St. Helena</option>
+                                  <option value="St. Pierre and Miguelon">St. Pierre and Miquelon</option>
+                                  <option value="Sudan">Sudan</option>
+                                  <option value="Suriname">Suriname</option>
+                                  <option value="Svalbard">Svalbard and Jan Mayen Islands</option>
+                                  <option value="Swaziland">Swaziland</option>
+                                  <option value="Sweden">Sweden</option>
+                                  <option value="Switzerland">Switzerland</option>
+                                  <option value="Syria">Syrian Arab Republic</option>
+                                  <option value="Taiwan">Taiwan, Province of China</option>
+                                  <option value="Tajikistan">Tajikistan</option>
+                                  <option value="Tanzania">Tanzania, United Republic of</option>
+                                  <option value="Thailand">Thailand</option>
+                                  <option value="Togo">Togo</option>
+                                  <option value="Tokelau">Tokelau</option>
+                                  <option value="Tonga">Tonga</option>
+                                  <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                  <option value="Tunisia">Tunisia</option>
+                                  <option value="Turkey">Turkey</option>
+                                  <option value="Turkmenistan">Turkmenistan</option>
+                                  <option value="Turks and Caicos">Turks and Caicos Islands</option>
+                                  <option value="Tuvalu">Tuvalu</option>
+                                  <option value="Uganda">Uganda</option>
+                                  <option value="Ukraine">Ukraine</option>
+                                  <option value="United Arab Emirates">United Arab Emirates</option>
+                                  <option value="United Kingdom">United Kingdom</option>
+                                  <option value="United States">United States</option>
+                                  <option value="United States Minor Outlying Islands">United States Minor Outlying
+                                    Islands</option>
+                                  <option value="Uruguay">Uruguay</option>
+                                  <option value="Uzbekistan">Uzbekistan</option>
+                                  <option value="Vanuatu">Vanuatu</option>
+                                  <option value="Venezuela">Venezuela</option>
+                                  <option value="Vietnam">Viet Nam</option>
+                                  <option value="Virgin Islands (British)">Virgin Islands (British)</option>
+                                  <option value="Virgin Islands (U.S)">Virgin Islands (U.S.)</option>
+                                  <option value="Wallis and Futana Islands">Wallis and Futuna Islands</option>
+                                  <option value="Western Sahara">Western Sahara</option>
+                                  <option value="Yemen">Yemen</option>
+                                  <option value="Serbia">Serbia</option>
+                                  <option value="Zambia">Zambia</option>
+                                  <option value="Zimbabwe">Zimbabwe</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <label class="f-14 w-500 text-gray px-2">Province</label>
+                              <div class="form-floating mb-3">
+                                <select class="js-example-basic-single " name="state">
+                                  <option value="Punjab">Punjab</option>
+                                  <option value="Sindh">Sindh</option>
+                                  <option value="KPK">KPK</option>
+                                  <option value="Balochistan">Balochistan</option>
+                                </select>
+
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <label class="f-14 w-500 text-gray px-2">City</label>
+                              <div class="form-select2 mb-3 ">
+                                <select class="js-example-basic-single " name="state">
+                                  <option value="Lahore">Lahore</option>
+                                  <option value="Karachi">Karachi</option>
+                                  <option value="Multan">Multan</option>
+                                  <option value="Islamabad">Islamabad</option>
+                                  <option value="Sargodha">Sargodha</option>
+                                  <option value="Mianwali">Mianwali</option>
+                                </select>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <input type="button" data-page="4" name="previous" class="previous action-button mt-3"
+                            value="Previous" />
+                          <input type="button" data-page="4" name="next" class="next action-button mt-3" value="Next" />
+                        </fieldset>
+                        <!-- Profession FIELD SET -->
+    <fieldset>
+      <h2 class="fs-title">Profession</h2>
+      <h3 class="fs-subtitle">How long can you keep your donors and their donations?</h3>
+      <div class="row">
+        <div class="col-lg-12 my-2 px-2">
+          <p class="mb-0 pb-0 f-16 w-500 text-gray">Are you doing any job?</p>
+          <div class=" mt-2">
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" name="job" id="yes-job" checked>
+              <label class="form-check-label text-gray" for="yes-job">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="job" id="no-job">
+              <label class="form-check-label text-gray" for="no-job">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 mt-3" id="job-desc">
+          <div class="form-flields">
+            <div class="form-floating mb-3">
+              <select id="selectOrType" class="form-select">
+                <option value="" selected>Select from options</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Engineer">Engineer</option>
+                <option value="custom">None of these</option>
+              </select>
+              <label for="selectOrType">Select Profession</label>
+            </div>
+
+          </div>
+
+          <div class="form-flields " id="customInput" style="display: none;">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="customText" placeholder="profession">
+              <label for="customText">Your Profession</label>
+              <div class="form-icon">
+                <i class="fa-solid fa-user-tie-hair"></i>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-lg-12" id="other-desc" style="display: none;">
+          <div class="form-flields ">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here"
+                id="floatingTextarea2" rows="3" style="height: 100px;"></textarea>
+              <label for="floatingTextarea2">Describe What you do</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- verify documents -->
+        <div class="col-lg-12 my-2 px-2">
+          <p class="mb-0 pb-0 f-16 w-500 text-gray">Do you want to verify your identity?</p>
+          <div class=" mt-2">
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" name="verify" id="yes-verify" checked>
+              <label class="form-check-label text-gray" for="yes-verify">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="verify" id="not-verify" >
+              <label class="form-check-label text-gray" for="not-verify">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12" id="verify-doc" style="display: none;">
+          <h2 class="f-16 w-500 text-dark my-3">Upload Your Documents for verification</h2>
+
+          <!-- id card front -->
+          <p class="f-14 w-500 text-gray mb-0 pb-0">1. Upload National Identity Card Front Picture </p>
+        
+          <div class=" position-relative custome-input-picture mt-2 mb-3">
+            <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
+              <label for="file2" class="custom-file-upload upload-text">
+                <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
+                  </Picture></span>
+              </label>
+              <span class="selected-file-name" style="display: none;"></span>
+              <span class="delete-icon" style="display: none;">&times;</span>
+              <input type="file" class="file-input" id="file2" aria-label="File browser example">
+            </label>
+            <div class="form-icon-pic">
+              <i class="fa-duotone fa-image"></i>
+            </div>
+          </div>
+
+          <!-- id card back -->
+          <p class="f-14 w-500 text-gray mb-0 pb-0">2. Upload National Identity Card Back Picture (Photo or pdf)</p>
+        
+          <div class=" position-relative custome-input-picture mt-2 mb-3">
+            <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
+              <label for="file3" class="custom-file-upload upload-text">
+                <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
+                  </Picture></span>
+              </label>
+              <span class="selected-file-name" style="display: none;"></span>
+              <span class="delete-icon" style="display: none;">&times;</span>
+              <input type="file" class="file-input" id="file3" aria-label="File browser example">
+            </label>
+            <div class="form-icon-pic">
+              <i class="fa-duotone fa-image"></i>
+            </div>
+          </div>
+
+          <!-- Religion proof-->
+          <p class="f-14 w-500 text-gray mb-0 pb-0">3. Upload Religion Proof  (Photo or pdf)</p>
+        
+          <div class=" position-relative custome-input-picture mt-2 mb-3">
+            <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
+              <label for="file4" class="custom-file-upload upload-text">
+                <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
+                  </Picture></span>
+              </label>
+              <span class="selected-file-name" style="display: none;"></span>
+              <span class="delete-icon" style="display: none;">&times;</span>
+              <input type="file" class="file-input" id="file4" aria-label="File browser example">
+            </label>
+            <div class="form-icon-pic">
+              <i class="fa-duotone fa-image"></i>
+            </div>
+          </div>
+
+          <!-- qualification proof -->
+
+          <p class="f-14 w-500 text-gray mb-0 pb-0">4. Upload Qualification Proof </p>
+        
+          <div class=" position-relative custome-input-picture mt-2 mb-3">
+            <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
+              <label for="file5" class="custom-file-upload upload-text">
+                <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
+                  </Picture></span>
+              </label>
+              <span class="selected-file-name" style="display: none;"></span>
+              <span class="delete-icon" style="display: none;">&times;</span>
+              <input type="file" class="file-input" id="file5" aria-label="File browser example">
+            </label>
+            <div class="form-icon-pic">
+              <i class="fa-duotone fa-image"></i>
+            </div>
+          </div>
+
+           <!-- job proof -->
+
+           <p class="f-14 w-500 text-gray mb-0 pb-0">5. Upload Job Proof </p>
+        
+           <div class=" position-relative custome-input-picture mt-2 mb-3">
+             <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
+               <label for="file6" class="custom-file-upload upload-text">
+                 <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
+                   </Picture></span>
+               </label>
+               <span class="selected-file-name" style="display: none;"></span>
+               <span class="delete-icon" style="display: none;">&times;</span>
+               <input type="file" class="file-input" id="file6" aria-label="File browser example">
+             </label>
+             <div class="form-icon-pic">
+               <i class="fa-duotone fa-image"></i>
+             </div>
+           </div>
+        </div>
+      </div>
+      <input type="button" data-page="5" name="previous" class="previous action-button mt-3"
+        value="Previous" />
+      <input id="submit" class="hs-button primary large action-button next mt-3" type="submit"
+        value="Submit">
+
+    </fieldset>
+
+                      </form>
+
+                    </div>
+                    <div class="col-lg-4  mx-auto">
+                      <div class="px-3">
+                        <div class="couple-card position-relative">
+                          <div class="couple-card-deatils">
+
+                            <div class="d-flex align-items-center view-deatils ms-auto">
+                              <i class="fa-duotone fa-eye"></i> 12
+                            </div>
+                          </div>
+                          <div class="carousel__slide">
+
+                            <figure>
+                              <div>
+                                <img src="assets/images/girls/g7.jpg" alt="">
+
+                              </div>
+                            </figure>
+                          </div>
+                          <div class="couple-card-content">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                              <h5 class="mb-0 pb-0 f-16">Amaira Khan</h5>
+                              <div class="not-verified">Not Verified</div>
+                            </div>
+                            <div class="d-flex align-items-center flex-wrap mb-2 pb-1">
+                              <div class="couple-tag">
+                                BSc
+                              </div>
+                              <div class="couple-tag">
+                                IT Professional
+                              </div>
+                              <div class="couple-tag">
+                                Islamabad, Pakisatn
+                              </div>
+                              <div class="couple-tag">
+                                Unmarried
+                              </div>
+                            </div>
+                            <hr class="line">
+                            <div class="couple-buttons mt-3 d-flex align-items-center justify-content-evenly">
+                              <a href="" class="disabled">Chat Now</a>
+                              <a href="" class="">Details</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="right-illus2 d-md-block d-none">
+                <img src="assets/images/3D-icon/Group 8 (1).png" alt="" class="img-fluid">
+              </div>
+              <div class="left-illus2 d-md-block d-none">
+                <img src="assets/images/3D-icon/Group 7 (2).png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
   </main>
-  <div class="right-illus2 d-md-block d-none">
-    <img src="assets/images/3D-icon/Group 8 (1).png" alt="" class="img-fluid">
-  </div>
-  <div class="left-illus2 d-md-block d-none">
-    <img src="assets/images/3D-icon/Group 7 (2).png" alt="" class="img-fluid">
-  </div>
+
   <div class="backdrop"></div>
   <!-- Jquery -->
   <script src="assets/Js/jquery.js"></script>
@@ -406,7 +857,160 @@
   <script src="assets/Js/slick.js"></script>
   <script src="assets/Js/app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
   <script src="assets/Js/register.js"></script>
+  <!-- Make sure you include the jQuery library in your HTML before this script. -->
+
+  <!-- Make sure you include the jQuery library in your HTML before this script. -->
+
+  <!-- Make sure you include the jQuery library in your HTML before this script. -->
+
+  <script>
+    $(document).ready(function () {
+      $('.custome-input-picture').each(function () {
+        var customFileUpload = $(this);
+        var fileInput = customFileUpload.find('.file-input');
+        var selectedFileName = customFileUpload.find('.selected-file-name');
+        var deleteIcon = customFileUpload.find('.delete-icon');
+        var uploadText = customFileUpload.find('.upload-text');
+        var picIcon = customFileUpload.find('.form-icon-pic');
+
+        customFileUpload.on('click', function () {
+          fileInput.click();
+        });
+
+        fileInput.on('change', function () {
+          var fileName = fileInput[0].files[0]?.name || '';
+          selectedFileName.text(fileName);
+          selectedFileName.css('display', 'inline');
+          deleteIcon.css('display', 'inline');
+          uploadText.css('display', 'none');
+          picIcon.css('display', 'none');
+        });
+
+        deleteIcon.on('click', function (event) {
+          event.preventDefault();
+          fileInput.val('');
+          selectedFileName.text('');
+          selectedFileName.css('display', 'none');
+          deleteIcon.css('display', 'none');
+          uploadText.css('display', 'block');
+          picIcon.css('display', 'inline');
+        });
+
+        // If there's an initial file selection, hide the "Click here to upload" text
+        if (fileInput.val()) {
+          uploadText.css('display', 'none');
+        }
+      });
+    });
+  </script>
+
+
+
+  <script>
+    // Function to toggle the input type between text and date
+    function toggleInputType() {
+      const input = document.getElementsByClassName('floatingInput2');
+      if (input.type === 'text') {
+        input.type = 'date';
+      } else {
+        input.type = 'text';
+      }
+    }
+
+    // Add a click event listener to the icon
+    document.querySelector('.fa-duotone.fa-envelopes').addEventListener('click', toggleInputType);
+  </script>
+  <!-- educated or not -->
+  <script>
+    // Get the radio buttons and the education-level div
+    const yesEducatedRadio = document.getElementById('yes-educated');
+    const noEducatedRadio = document.getElementById('not-educated');
+    const educationLevelDiv = document.getElementById('education-level');
+
+    // Add an event listener to the radio buttons to toggle the visibility of the education-level div
+    yesEducatedRadio.addEventListener('change', function () {
+      educationLevelDiv.style.display = this.checked ? 'block' : 'none';
+    });
+
+    noEducatedRadio.addEventListener('change', function () {
+      educationLevelDiv.style.display = this.checked ? 'none' : 'block';
+    });
+
+    // Initialize the visibility based on the default checked state
+    educationLevelDiv.style.display = yesEducatedRadio.checked ? 'block' : 'none';
+
+  </script>
+  <!-- doing job or not -->
+  <script>
+    // JavaScript
+    const yesJob = document.getElementById('yes-job');
+    const noJob = document.getElementById('no-job');
+    const jobDesc = document.getElementById('job-desc');
+    const otherDesc = document.getElementById('other-desc');
+
+    yesJob.addEventListener('change', function () {
+      jobDesc.style.display = this.checked ? 'block' : 'none';
+      otherDesc.style.display = this.checked ? 'none' : 'block';
+    });
+
+    noJob.addEventListener('change', function () {
+      jobDesc.style.display = this.checked ? 'none' : 'block';
+      otherDesc.style.display = this.checked ? 'block' : 'none';
+    });
+
+    // Initialize the visibility based on the default checked state
+    if (yesJob.checked) {
+      jobDesc.style.display = 'block';
+      otherDesc.style.display = 'none';
+    } else {
+      jobDesc.style.display = 'none';
+      otherDesc.style.display = 'block';
+    }
+  </script>
+  <!-- select job -->
+  <script>
+    const selectOrType = document.getElementById('selectOrType');
+    const customInput = document.getElementById('customInput');
+    const customText = document.getElementById('customText');
+
+    selectOrType.addEventListener('change', function () {
+      if (this.value === 'custom') {
+        customInput.style.display = 'block';
+      } else {
+        customInput.style.display = 'none';
+      }
+    });
+  </script>
+  <!--doc verification or not -->
+  <script>
+    // Get the radio buttons and the education-level div
+    const yesVerify = document.getElementById('yes-verify');
+    const notVerify = document.getElementById('not-verify');
+    const docVerify = document.getElementById('verify-doc');
+
+    // Add an event listener to the radio buttons to toggle the visibility of the education-level div
+    yesVerify.addEventListener('change', function () {
+      docVerify.style.display = this.checked ? 'block' : 'none';
+    });
+
+    notVerify.addEventListener('change', function () {
+      docVerify.style.display = this.checked ? 'none' : 'block';
+    });
+
+    // Initialize the visibility based on the default checked state
+    docVerify.style.display = yesVerify.checked ? 'block' : 'none';
+
+  </script>
+  <script>
+    // In your Javascript (external .js resource or <script> tag)
+    $(document).ready(function () {
+      $('.js-example-basic-single').select2();
+    })
+  </script>
+
 </body>
 
 </html>

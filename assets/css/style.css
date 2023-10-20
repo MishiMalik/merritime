@@ -176,7 +176,19 @@ body {
 
 .form-floating {
   border: none; }
-  .form-floating input {
+  .form-floating select {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    border-bottom: 1px solid #b6b3b3 !important;
+    border-radius: 0;
+    color: #738ea5; }
+    .form-floating select:active, .form-floating select:focus {
+      outline: none;
+      box-shadow: none;
+      border-bottom: 1px solid #E32524 !important; }
+  .form-floating input,
+  .form-floating textarea {
     width: 100%;
     margin-bottom: 20px;
     border: 0;
@@ -184,7 +196,9 @@ body {
     background: transparent;
     border-radius: 0;
     color: #738ea5; }
-    .form-floating input:active, .form-floating input:focus {
+    .form-floating input:active, .form-floating input:focus,
+    .form-floating textarea:active,
+    .form-floating textarea:focus {
       outline: none;
       box-shadow: none;
       border-bottom: 1px solid #E32524 !important; }
@@ -966,13 +980,29 @@ header {
 
 .right-illus2 {
   position: fixed;
-  right: -100px;
+  right: -80px;
   bottom: -5px; }
+  @media only screen and (min-width: 1600px) {
+    .right-illus2 {
+      right: 30px; } }
+  @media only screen and (min-width: 1700px) {
+    .right-illus2 {
+      position: absolute;
+      right: -240px;
+      bottom: -5px; } }
 
 .left-illus2 {
   position: fixed;
   bottom: -15px;
   left: -120px; }
+  @media only screen and (min-width: 1600px) {
+    .left-illus2 {
+      left: -10px; } }
+  @media only screen and (min-width: 1700px) {
+    .left-illus2 {
+      position: absolute;
+      bottom: -15px;
+      left: -250px; } }
 
 /*form styles*/
 .steps {
@@ -998,15 +1028,15 @@ header {
   outline: 0;
   border: 0;
   cursor: pointer;
-  will-change: box-shadow,transform;
-  background: radial-gradient(100% 100% at 100% 0%, #BA3938 0%, #E32524 100%);
+  will-change: box-shadow, transform;
+  background: radial-gradient(100% 100% at 100% 0%, #ba3938 0%, #E32524 100%);
   box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.253), 0px 7px 13px -3px rgba(45, 35, 66, 0.199), inset 0px -1px 0px rgba(58, 65, 111, 0.288);
   padding: 8px 25px;
   border-radius: 6px;
   color: #fff;
   font-size: 16px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-  transition: box-shadow 0.15s ease,transform 0.15s ease; }
+  transition: box-shadow 0.15s ease, transform 0.15s ease; }
   .steps .action-button:hover,
   .action-button:hover {
     box-shadow: 0px 4px 8px rgba(45, 35, 66, 0.185), 0px 7px 13px -3px rgba(45, 35, 66, 0.199), inset 0px -3px 0px #E32524;
@@ -1048,7 +1078,7 @@ header {
   font-weight: normal;
   font-size: 14px;
   font-weight: 500;
-  color: #837E7E;
+  color: #837e7e;
   margin-bottom: 20px; }
 
 /*progressbar*/
@@ -1078,7 +1108,7 @@ header {
   display: block;
   font-size: 10px;
   color: white;
-  background: #D1CCD8;
+  background: #d1ccd8;
   border-radius: 3px;
   margin: 0 auto 5px auto;
   position: relative;
@@ -1086,10 +1116,10 @@ header {
 
 /*progressbar connectors*/
 #progressbar li:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
-  background: #D1CCD8;
+  background: #d1ccd8;
   position: absolute;
   left: -50%;
   top: 9px;
@@ -1110,7 +1140,7 @@ header {
 .modal p {
   font-size: 15px;
   font-weight: 100;
-  color: #3C3B3B;
+  color: #3c3b3b;
   line-height: 21px; }
 
 .modal {
@@ -1179,7 +1209,7 @@ header {
   transition: opacity 0.5s; }
 
 /*slide*/
-.modal[data-modal-effect|=slide] .modal-content {
+.modal[data-modal-effect|="slide"] .modal-content {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -moz-transition: all 0.5s 0;
@@ -1187,7 +1217,7 @@ header {
   -webkit-transition: all 0.5s 0;
   transition: all 0.5s 0; }
 
-.modal[data-modal-effect|=slide].modal-show .modal-content {
+.modal[data-modal-effect|="slide"].modal-show .modal-content {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
   -moz-transition: all 0.5s 0.1s;
@@ -1196,13 +1226,13 @@ header {
   -webkit-transition-delay: 0.1s;
   transition: all 0.5s 0.1s; }
 
-.modal[data-modal-effect=slide-top] .modal-content {
+.modal[data-modal-effect="slide-top"] .modal-content {
   -moz-transform: translateY(-300%);
   -ms-transform: translateY(-300%);
   -webkit-transform: translateY(-300%);
   transform: translateY(-300%); }
 
-.modal[data-modal-effect=slide-top].modal-show .modal-content {
+.modal[data-modal-effect="slide-top"].modal-show .modal-content {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -1241,7 +1271,7 @@ header {
     height: 0;
     left: 14px;
     top: -14px;
-    content: '';
+    content: "";
     position: absolute;
     border-left: 6px solid transparent;
     border-bottom: 8px solid #e62163;
@@ -1263,3 +1293,76 @@ header {
     float: right;
     margin: 28px auto 10px;
     width: 100% !important; } }
+
+.file-input {
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  left: 5px;
+  height: 25px;
+  opacity: 0;
+  width: 90%;
+  padding: 7px 0px;
+  background-color: red; }
+
+/* Style the custom label as a button */
+.custom-file-upload {
+  border: 0px solid #ccc;
+  display: inline-block;
+  padding: 0px 12px;
+  cursor: pointer;
+  color: black;
+  border-radius: 3px;
+  width: 175px; }
+
+/* Style the label when hovering */
+.custom-file-upload:hover {
+  background-color: #f0f0f0; }
+
+/* Style the delete icon (X) */
+.delete-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 25px !important;
+  color: red; }
+
+.pic-input {
+  border-bottom: 1px solid #b6b3b3 !important;
+  background: transparent;
+  border-radius: 0;
+  color: black;
+  height: 40px; }
+  .pic-input:active, .pic-input:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #E32524 !important; }
+
+.form-icon-pic {
+  position: absolute;
+  right: 23px;
+  top: 13px; }
+  .form-icon-pic i {
+    color: #E32524 !important; }
+
+.form-floating > .form-select, .form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown) {
+  padding-bottom: 0.3rem; }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  width: 100%;
+  opacity: 0; }
+
+.select2-container--default .select2-selection--single {
+  border: 0 !important;
+  border-bottom: 1px solid #b6b3b3 !important;
+  border-radius: 0 !important;
+  color: #738ea5; }
+  .select2-container--default .select2-selection--single:active, .select2-container--default .select2-selection--single:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #E32524 !important; }
+
+.select2.select2-container.select2-container--default {
+  width: 100% !important; }
