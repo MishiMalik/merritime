@@ -591,7 +591,8 @@ body {
 
 .form-floating > label {
   padding-left: 0px !important;
-  color: #738ea5; }
+  color: #738ea5;
+  width: 100%; }
 
 .social-top {
   border: 2px solid #F71800; }
