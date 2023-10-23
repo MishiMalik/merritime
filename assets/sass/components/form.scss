@@ -336,6 +336,9 @@
     right: -160px;
     img {
       height: 350px;
+      @media only screen and (max-width: 1050px) {
+        height: 250px;
+      }
     }
   }
   .left-illus {
@@ -344,7 +347,11 @@
     left: -320px;
     img {
       height: 500px;
+      @media only screen and (max-width: 1050px) {
+        height: 250px;
+      }
     }
+   
   }
   &--container {
     padding: 30px;

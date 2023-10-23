@@ -445,12 +445,18 @@ body {
     right: -160px; }
     .form-box .right-illus2 img {
       height: 350px; }
+      @media only screen and (max-width: 1050px) {
+        .form-box .right-illus2 img {
+          height: 250px; } }
   .form-box .left-illus {
     position: absolute;
     bottom: -10px;
     left: -320px; }
     .form-box .left-illus img {
       height: 500px; }
+      @media only screen and (max-width: 1050px) {
+        .form-box .left-illus img {
+          height: 250px; } }
   .form-box--container {
     padding: 30px;
     position: relative;
