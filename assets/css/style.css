@@ -188,19 +188,23 @@ body {
       border-bottom: 1px solid #E32524 !important; }
   .form-floating input,
   .form-floating textarea {
+    padding-right: 30px !important;
     width: 100%;
     margin-bottom: 20px;
     border: 0;
     border-bottom: 1px solid #b6b3b3 !important;
     background: transparent;
-    border-radius: 0;
-    color: #738ea5; }
+    border-radius: 0; }
     .form-floating input:active, .form-floating input:focus,
     .form-floating textarea:active,
     .form-floating textarea:focus {
       outline: none;
       box-shadow: none;
       border-bottom: 1px solid #E32524 !important; }
+    @media only screen and (max-width: 600px) {
+      .form-floating input,
+      .form-floating textarea {
+        font-size: 14px; } }
 
 .code-input {
   border: 1px solid #b6b3b3 !important;
@@ -243,7 +247,7 @@ body {
 .form-icon {
   position: absolute;
   right: 10px;
-  top: 20px; }
+  top: 26px; }
   .form-icon i {
     color: #E32524 !important; }
 
@@ -1217,11 +1221,12 @@ header {
 .custom-file-upload {
   border: 0px solid #ccc;
   display: inline-block;
-  padding: 0px 12px;
+  padding: 0px 12px 0 0;
   cursor: pointer;
-  color: black;
+  color: #738ea5;
   border-radius: 3px;
-  width: 175px; }
+  width: 175px;
+  font-weight: 500; }
 
 /* Style the label when hovering */
 .custom-file-upload:hover {
@@ -1276,3 +1281,117 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .select2.select2-container.select2-container--default {
   width: 100% !important; }
+
+.drop-zone {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 200px;
+  border-width: 2px;
+  margin-bottom: 20px;
+  color: #646C7F;
+  border-style: dashed;
+  border-color: #F71800;
+  border-radius: 5px;
+  line-height: 200px;
+  cursor: pointer;
+  background-color: #f6f6f6 !important;
+  width: 100%; }
+  .drop-zone.is-dragover {
+    color: #999;
+    border-style: solid; }
+  .drop-zone.has-images {
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden; }
+    .drop-zone.has-images::-webkit-scrollbar {
+      height: 7px; }
+    .drop-zone.has-images::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      border-radius: 10px; }
+    .drop-zone.has-images .msg {
+      display: none; }
+  .drop-zone input.has-image {
+    opacity: 1;
+    width: 0px;
+    height: 0; }
+  .drop-zone input.receiver {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer; }
+  .drop-zone .preview {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: default;
+    margin: 0 5px;
+    height: 120px;
+    border-radius: 5px; }
+    .drop-zone .preview:hover .details {
+      display: flex; }
+    .drop-zone .preview img {
+      max-width: 120px;
+      max-height: 120px;
+      border-radius: 5px; }
+    .drop-zone .preview .details {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center; }
+    .drop-zone .preview .remove {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background-color: #F71800;
+      cursor: pointer; }
+      .drop-zone .preview .remove .fa {
+        font-size: 20px;
+        color: white; }
+
+.msg {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .msg p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    color: #E32524;
+    opacity: 1;
+    line-height: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media only screen and (max-width: 500px) {
+      .msg p {
+        line-height: 17px;
+        font-size: 15px; } }
+  .msg .fill-btn {
+    width: fit-content !important;
+    margin-top: 20px;
+    font-size: 14px; }
+    @media only screen and (max-width: 500px) {
+      .msg .fill-btn {
+        margin-top: 10px; } }
+
+.selected-file-name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
