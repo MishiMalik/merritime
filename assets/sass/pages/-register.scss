@@ -34,30 +34,52 @@
 
 .right-illus2 {
   position: fixed;
-  right: -80px;
+  right: -86px;
   bottom: -5px;
-  @media only screen and (min-width:1599px){
-    right:15px;
+  @media only screen and (min-width: 1599px) {
+    right: 15px;
   }
-@media only screen and (min-width:1700px){
+  @media only screen and (min-width: 1700px) {
     position: absolute;
-  right: -240px;
-  bottom: -5px;
-}
+    right: -240px;
+    bottom: -5px;
+  }
+  @media only screen and (max-width: 1100px) {
+    right: -110px;
+  }
+  @media only screen and (max-width: 1050px) {
+    right: -40px;
+  }
+  img {
+    @media only screen and (max-width: 1050px) {
+      height: 250px;
+      width: auto;
+    }
+  }
 }
 
 .left-illus2 {
   position: fixed;
   bottom: -15px;
   left: -120px;
-  @media only screen and (min-width:1600px){
+  @media only screen and (min-width: 1600px) {
     left: -10px;
   }
-  @media only screen and (min-width:1700px){
+  @media only screen and (min-width: 1700px) {
     position: absolute;
     bottom: -15px;
     left: -250px;
-}
+  }
+
+  @media only screen and (max-width: 1050px) {
+    left: -50px;
+  }
+  img {
+    @media only screen and (max-width: 1050px) {
+      height: 250px;
+      width: auto;
+    }
+  }
   // img {
   //   height: 500px;
   // }
@@ -184,21 +206,6 @@
 /*buttons*/
 .steps .action-button,
 .action-button {
-  // width: 100px !important;
-  // background: $primary-dark;
-  // font-weight: bold;
-  // color: white;
-  // border: 0 none;
-  // border-radius: 1px;
-  // cursor: pointer;
-  // padding: 10px 5px;
-  // margin: 10px auto;
-  // -webkit-transition: all 0.3s linear 0s;
-  // -moz-transition: all 0.3s linear 0s;
-  // -ms-transition: all 0.3s linear 0s;
-  // -o-transition: all 0.3s linear 0s;
-  // transition: all 0.3s linear 0s;
-  // display: block;
   text-decoration: none;
   display: inline-block;
   outline: 0;
@@ -227,6 +234,10 @@
     transform: translateY(-2px);
     color: white !important;
   }
+  @media only screen and (max-width:540px){
+    padding: 6px 20px;
+    font-size: 14px;
+  }
 }
 
 .steps .next,
@@ -236,6 +247,15 @@
 
 .steps .previous {
   float: left;
+}
+.steps{
+  p{
+    @media only screen and (max-width:540px){
+      font-size: 14px;
+    }
+  
+  }
+ 
 }
 
 // .steps .action-button:hover,
@@ -304,6 +324,15 @@
   font-weight: 600 !important;
   float: left;
   position: relative;
+  @media only screen and (max-width: 991px) {
+    font-size: 10px;
+  }
+  @media only screen and (max-width: 769px) {
+    font-size: 8px;
+  }
+  @media only screen and (max-width: 500px) {
+    font-size: 0px;
+  }
 }
 
 #progressbar li:before {
@@ -463,167 +492,91 @@
 
 /* RESPONSIVE */
 
-/* moves error logs in tablet/smaller screens */
-
-@media (max-width: 1000px) {
-  /*brings inputs down in size */
-  .steps input,
-  .steps textarea {
-    outline: none;
-    display: block;
-    width: 100% !important;
-  }
-
-  /*brings errors in */
-  .error1 {
-    left: 345px;
-    margin-top: -58px;
-  }
-}
-
-@media (max-width: 675px) {
-  /*mobile phone: uncollapse all fields: remove progress bar*/
-
-  .steps {
-    width: 100%;
-    margin: 50px auto;
-    position: relative;
-  }
-
-  #progressbar {
-    display: none;
-  }
-
-  /*move error logs */
-  .error1 {
-    position: relative;
-    left: 0 !important;
-    margin-top: 24px;
-    top: -11px;
-  }
-
-  .error1:before {
-    width: 0;
-    height: 0;
-    left: 14px;
-    top: -14px;
-    content: "";
-    position: absolute;
-    border-left: 6px solid transparent;
-    border-bottom: 8px solid #e62163;
-    border-right: 6px solid transparent;
-  }
-
-  /*show hidden fieldsets */
-  .steps fieldset:not(:first-of-type) {
-    display: block;
-  }
-
-  .steps fieldset {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 45px;
-  }
-
-  .steps .next,
-  .steps .previous {
-    display: none;
-  }
-
-  .steps .explanation {
-    display: none;
-  }
-
-  .steps .submit {
-    float: right;
-    margin: 28px auto 10px;
-    width: 100% !important;
-  }
-}
-
 // ===================custum select input
 
+.file-input {
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  left: 5px;
+  height: 25px;
+  opacity: 0;
+  width: 90%;
+  padding: 7px 0px;
+  background-color: red;
+}
 
-.file-input{
-    position: absolute;
-    left: 0;
-    bottom: 7px;
-    left: 5px;
-    height: 25px;
-    opacity: 0;
-    width:90%;
-    padding: 7px 0px;
-    background-color: red; 
+/* Style the custom label as a button */
+.custom-file-upload {
+  border: 0px solid #ccc;
+  display: inline-block;
+  padding: 0px 12px;
+  cursor: pointer;
+  color: black;
+  border-radius: 3px;
+  width: 175px;
 }
-  
-  /* Style the custom label as a button */
-  .custom-file-upload {
-    border: 0px solid #ccc;
-    display: inline-block;
-    padding: 0px 12px;
-    cursor: pointer;
-    color: black;
-    border-radius: 3px;
-    width: 175px; }
-  
-  /* Style the label when hovering */
-  .custom-file-upload:hover {
-    background-color: #f0f0f0; }
-  
-  /* Style the delete icon (X) */
-  .delete-icon {
-    position: absolute;
-    bottom: 5px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 25px !important;
-    color: red; }
-.pic-input{
-    border-bottom: 1px solid #b6b3b3 !important;
-    background: transparent;
-    border-radius: 0;
-    color: black;
-    height: 40px;
-    &:active,
-    &:focus {
-      outline: none;
-      box-shadow: none;
-      border-bottom: 1px solid $primary-dark !important;
-    }
-}  
-.form-icon-pic{
-    position: absolute;
-    right: 23px;
-    top: 13px;
-    i {
-      color: $primary-dark !important;
-    }
+
+/* Style the label when hovering */
+.custom-file-upload:hover {
+  background-color: #f0f0f0;
 }
-.form-floating > .form-select, .form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown){
-    padding-bottom:0.3rem
+
+/* Style the delete icon (X) */
+.delete-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 25px !important;
+  color: red;
+}
+.pic-input {
+  border-bottom: 1px solid #b6b3b3 !important;
+  background: transparent;
+  border-radius: 0;
+  color: black;
+  height: 40px;
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid $primary-dark !important;
+  }
+}
+.form-icon-pic {
+  position: absolute;
+  right: 23px;
+  top: 13px;
+  i {
+    color: $primary-dark !important;
+  }
+}
+.form-floating > .form-select,
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown) {
+  padding-bottom: 0.3rem;
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
-    // display: none;
-    position: absolute;
-    width: 100%;
-    opacity: 0;
-  }
+  // display: none;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+}
 
- 
-  .select2-container--default .select2-selection--single{
-    border: 0 !important;
-    border-bottom: 1px solid #b6b3b3 !important;
-    border-radius: 0 !important;
-    color: #738ea5;
+.select2-container--default .select2-selection--single {
+  border: 0 !important;
+  border-bottom: 1px solid #b6b3b3 !important;
+  border-radius: 0 !important;
+  color: #738ea5;
 
-    &:active,
-    &:focus {
-      outline: none;
-      box-shadow: none;
-      border-bottom: 1px solid $primary-dark !important;
-    }
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid $primary-dark !important;
   }
-  .select2.select2-container.select2-container--default{
-    width: 100% !important;
-  }
+}
+.select2.select2-container.select2-container--default {
+  width: 100% !important;
+}

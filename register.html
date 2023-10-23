@@ -88,7 +88,7 @@
                     <div class="section-title-img">
                       <img decoding="async" src="assets/images/Untitled-1 (2) - Copy.png" alt="" class="img-fluid">
                     </div>
-                    <div class="steps pt-4 pb-3">
+                    <div class="steps pt-4 pb-md-3">
                       <ul id="progressbar">
                         <li class="active">Personal Info</li>
                         <li>Credentials </li>
@@ -113,8 +113,8 @@
                             <div class="col-lg-12">
                               <div class="form-flields ">
                                 <div class="form-floating mb-3">
-                                  <input type="text" class="form-control" id="first-name" placeholder="Name">
-                                  <label for="first-name">First Name</label>
+                                  <input type="text" class="form-control" id="first-name" placeholder="Name" required>
+                                  <label for="first-name">First Name<span class="text-danger">*</span></label>
                                   <div class="form-icon">
                                     <i class="fa-duotone fa-user"></i>
                                   </div>
@@ -135,7 +135,7 @@
                             <div class="col-lg-12 position-relative custome-input-picture">
                               <div class="file pic-input mb-3 mt-2 w-100 pt-1" style="position: relative;">
                                 <input type="file" class="file-input" id="file1" aria-label="File browser example">
-                               
+
                                 <label for="file1" class="custom-file-upload upload-text">
                                   <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture <Picture>
                                     </Picture></span>
@@ -151,8 +151,8 @@
                               <div class="form-flields ">
                                 <div class="form-floating mb-3">
                                   <input type="text" class="form-control text-black floatingInput2" id="floatingInput"
-                                    onfocus="(this.type = 'date')" placeholder="DOB">
-                                  <label for="floatingInput">Date of Birth</label>
+                                    onfocus="(this.type = 'date')" placeholder="DOB" required>
+                                  <label for="floatingInput">Date of Birth<span class="text-danger">*</span></label>
                                   <div class="form-icon">
                                     <i class="fa-duotone fa-calendar-day"></i>
                                   </div>
@@ -165,10 +165,11 @@
                                   <div class="form-floating mb-3">
                                     <select class="form-select" id="selectGender"
                                       aria-label="Floating label select example">
+                                      <option value="">Please Select Gender</option>
                                       <option value="male">Male</option>
                                       <option value="female">Female</option>
                                     </select>
-                                    <label for="selectGender">Select Gender</label>
+                                    <label for="selectGender">Select Gender<span class="text-danger">*</span></label>
                                   </div>
                                 </div>
                               </div>
@@ -177,32 +178,33 @@
                               <div class="form-flields">
                                 <div class="form-floating mb-3">
                                   <select class="form-select" id="selectReligion"
-                                    aria-label="Floating label select example">
+                                    aria-label="Floating label select example" required>
+                                    <option value="">Please Select Region</option>
                                     <option value="christianity">Christianity</option>
                                     <option value="islam">Islam</option>
                                     <option value="hinduism">Hinduism</option>
                                     <option value="buddhism">Buddhism</option>
                                     <option value="judaism">Judaism</option>
                                     <option value="sikhism">Sikhism</option>
-
+                                    <option value="no-religion">No Religion</option>
                                   </select>
-                                  <label for="selectReligion">Select Religion</label>
+                                  <label for="selectReligion">Select Religion<span class="text-danger">*</span></label>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-lg-12 my-2 px-3">
-                              <div class="d-flex  justify-content-between px-1">
+                            <div class="col-lg-12 ask-married  ">
+                              <div class=" px-1">
                                 <p class="mb-0 pb-0 f-16 w-500 text-gray">Are you married before and looking for another
                                   marriage?</p>
-                                <div class="d-flex flex-wrap">
-                                  <div class="form-check ms-3">
+                                <div class=" ">
+                                  <div class="form-check mt-2">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault"
                                       id="flexRadioDefault1">
                                     <label class="form-check-label text-gray" for="flexRadioDefault1">
                                       Yes
                                     </label>
                                   </div>
-                                  <div class="form-check ms-4">
+                                  <div class="form-check ">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault"
                                       id="flexRadioDefault2" checked>
                                     <label class="form-check-label text-gray" for="flexRadioDefault2">
@@ -212,18 +214,58 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-lg-12">
-                              <div class="form-flields ">
-                                <div class="form-floating">
-                                  <textarea class="form-control" placeholder="Leave a comment here"
-                                    id="floatingTextarea2" rows="3" style="height: 100px;"></textarea>
-                                  <label for="floatingTextarea2">Describe Yourself</label>
+                            <!-- <div class="col-lg-12  ask-divorce my-2 px-3">
+                              <div class="d-flex  justify-content-between px-1">
+                                <p class="mb-0 pb-0 f-16 w-500 text-gray">Are you divorced?</p>
+                                <div class="d-flex flex-wrap">
+                                  <div class="form-check ms-3">
+                                    <input class="form-check-input" type="radio" name="divorced" id="divorcedYes"
+                                      checked>
+                                    <label class="form-check-label text-gray" for="divorcedYes">
+                                      Yes
+                                    </label>
+                                  </div>
+                                  <div class="form-check ms-4">
+                                    <input class="form-check-input" type="radio" name="divorced" id="divorcedNo">
+                                    <label class="form-check-label text-gray" for="divorcedNo">
+                                      No
+                                    </label>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-
+                            <div class="col-lg-12 ask-widow px-3">
+                              <div class="d-flex  justify-content-between px-1">
+                                <p class="mb-0 pb-0 f-16 w-500 text-gray">Are you a widow or a widower?</p>
+                                <div class="d-flex flex-wrap">
+                                  <div class="form-check ms-3">
+                                    <input class="form-check-input" type="radio" name="widow" id="widowYes">
+                                    <label class="form-check-label text-gray" for="widoweYes">
+                                      Yes
+                                    </label>
+                                  </div>
+                                  <div class="form-check ms-4">
+                                    <input class="form-check-input" type="radio" name="widow" id="WidowNo" checked>
+                                    <label class="form-check-label text-gray" for="WidowNo">
+                                      No
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div> -->
+                            <div class="col-lg-12  mt-2">
+                              <div class="form-flields ">
+                                <div class="form-floating">
+                                  <textarea class="form-control mb-0 pb-0" placeholder="Leave a comment here"
+                                    id="floatingTextarea2" rows="3" style="height: 100px;" maxlength="500"
+                                    minlength="30" required></textarea>
+                                  <label for="floatingTextarea2">Describe Yourself<span
+                                      class="text-danger">*</span></label>
+                                </div>
+                              </div>
+                              <p class="f-12 w-500 text-gray mt-1">(Max 500 characters, Min 30 characters)</p>
+                            </div>
                           </div>
-
                           <input type="button" data-page="1" name="next" class="next action-button mt-3" value="Next" />
 
                         </fieldset>
@@ -234,8 +276,9 @@
                             molestiae.</h3>
                           <div class="form-flields ">
                             <div class="form-floating mb-3">
-                              <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                              <label for="email">Email</label>
+                              <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                                required>
+                              <label for="email">Email<span class="text-danger">*</span></label>
                               <div class="form-icon">
                                 <i class="fa-duotone fa-envelopes"></i>
                               </div>
@@ -243,8 +286,9 @@
                           </div>
                           <div class="form-flields ">
                             <div class="form-floating mb-3">
-                              <input type="email" class="form-control" id="password" placeholder="name@example.com">
-                              <label for="password">Password</label>
+                              <input type="email" class="form-control" id="password" placeholder="name@example.com"
+                                required>
+                              <label for="password">Password<span class="text-danger">*</span></label>
                               <div class="form-icon">
                                 <i class="fa-duotone fa-lock"></i>
                               </div>
@@ -252,8 +296,9 @@
                           </div>
                           <div class="form-flields ">
                             <div class="form-floating mb-3">
-                              <input type="email" class="form-control" id="password" placeholder="name@example.com">
-                              <label for="password">Confirm password</label>
+                              <input type="email" class="form-control" id="password" placeholder="name@example.com"
+                                required>
+                              <label for="password">Confirm password<span class="text-danger">*</span></label>
                               <div class="form-icon">
                                 <i class="fa-duotone fa-lock"></i>
                               </div>
@@ -270,13 +315,13 @@
                           <h3 class="fs-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
                             molestiae.</h3>
                           <div class="row">
-                            <div class="col-lg-12 my-2 px-2">
+                            <div class="col-lg-12 my-2 ">
                               <p class="mb-0 pb-0 f-16 w-500 text-gray">Are you educated?</p>
                               <div class=" mt-2">
                                 <div class="form-check ">
                                   <input class="form-check-input" type="radio" name="educated" id="yes-educated"
                                     checked>
-                                  <label class="form-check-label text-gray" for="yes-edicated">
+                                  <label class="form-check-label text-gray" for="yes-educated">
                                     Yes
                                   </label>
                                 </div>
@@ -293,19 +338,39 @@
                                 <div class="form-floating mb-3">
                                   <select class="form-select" id="selectEducation"
                                     aria-label="Floating label select example">
-                                    <option value="highschool">High School</option>
-                                    <option value="undergraduate">Undergraduate</option>
-                                    <option value="graduate">Graduate</option>
-                                    <option value="postgraduate">Postgraduate</option>
+                                    <option value="no-select">Please Select Education</option>
+                                    <option value="10 Year Education">10 Year Education</option>
+                                    <option value="12 Year Education">12 Year Education</option>
+                                    <option value="14 Year Education">14 Year Education</option>
+                                    <option value="16 Year Education">16 Year Education</option>
+                                    <option value="18 Year Education">18 Year Education</option>
                                     <option value="doctorate">Doctorate</option>
-                                    <option value="other">Other</option>
                                   </select>
                                   <label for="selectEducation">Education Level</label>
                                 </div>
 
                               </div>
+                              <div class="form-flields ">
+                                <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="deg-level" placeholder="level">
+                                  <label for="deg-level">Please Enter Degree Level</label>
+                                  <div class="form-icon">
+                                    <i class="fa-duotone fa-user-graduate"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-flields ">
+                                <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="institute-name" placeholder="institute">
+                                  <label for="institute-name">Please Enter Institution Name</label>
+                                  <div class="form-icon">
+                                    <i class="fa-duotone fa-graduation-cap"></i>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
+
                           <input type="button" data-page="3" name="previous" class="previous action-button mt-3"
                             value="Previous" />
                           <input type="button" data-page="3" name="next" class="next action-button mt-3" value="Next" />
@@ -318,9 +383,10 @@
 
                           <div class="row">
                             <div class="col-lg-12">
-                              <label class="f-14 w-500 text-gray px-2">Country</label>
+                              <label class="f-14 w-500 text-gray px-2">Country<span class="text-danger">*</span></label>
                               <div class="form-floating mb-3 ">
-                                <select class="js-example-basic-single " name="state">
+                                <select class="js-example-basic-single " name="state" required>
+                                  <option value="Please select">Please Select Country</option>
                                   <option value="Afghanistan">Afghanistan</option>
                                   <option value="Albania">Albania</option>
                                   <option value="Algeria">Algeria</option>
@@ -566,9 +632,11 @@
                               </div>
                             </div>
                             <div class="col-lg-12">
-                              <label class="f-14 w-500 text-gray px-2">Province</label>
+                              <label class="f-14 w-500 text-gray px-2">Province<span
+                                  class="text-danger">*</span></label>
                               <div class="form-floating mb-3">
-                                <select class="js-example-basic-single " name="state">
+                                <select class="js-example-basic-single " name="state" required>
+                                  <option value="">Please Select Province</option>
                                   <option value="Punjab">Punjab</option>
                                   <option value="Sindh">Sindh</option>
                                   <option value="KPK">KPK</option>
@@ -578,9 +646,10 @@
                               </div>
                             </div>
                             <div class="col-lg-12">
-                              <label class="f-14 w-500 text-gray px-2">City</label>
+                              <label class="f-14 w-500 text-gray px-2">City<span class="text-danger">*</span></label>
                               <div class="form-select2 mb-3 ">
-                                <select class="js-example-basic-single " name="state">
+                                <select class="js-example-basic-single " name="state" required>
+                                  <option value="">Please Select City</option>
                                   <option value="Lahore">Lahore</option>
                                   <option value="Karachi">Karachi</option>
                                   <option value="Multan">Multan</option>
@@ -598,246 +667,224 @@
                           <input type="button" data-page="4" name="next" class="next action-button mt-3" value="Next" />
                         </fieldset>
                         <!-- Profession FIELD SET -->
-    <fieldset>
-      <h2 class="fs-title">Profession</h2>
-      <h3 class="fs-subtitle">How long can you keep your donors and their donations?</h3>
-      <div class="row">
-        <div class="col-lg-12 my-2 px-2">
-          <p class="mb-0 pb-0 f-16 w-500 text-gray">Are you doing any job?</p>
-          <div class=" mt-2">
-            <div class="form-check ">
-              <input class="form-check-input" type="radio" name="job" id="yes-job" checked>
-              <label class="form-check-label text-gray" for="yes-job">
-                Yes
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="job" id="no-job">
-              <label class="form-check-label text-gray" for="no-job">
-                No
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 mt-2" id="job-desc">
-          <div class="form-flields">
-            <div class="form-floating mb-3">
-              <select id="selectOrType" class="form-select">
-                <option value="" selected>Select from options</option>
-                <option value="Teacher">Teacher</option>
-                <option value="Doctor">Doctor</option>
-                <option value="Engineer">Engineer</option>
-                <option value="custom">None of these</option>
-              </select>
-              <label for="selectOrType">Select Profession</label>
-            </div>
+                        <fieldset>
+                          <h2 class="fs-title">Profession</h2>
+                          <h3 class="fs-subtitle">How long can you keep your donors and their donations?</h3>
+                          <div class="row">
+                            <div class="col-lg-12 my-2 ">
+                              <p class="mb-0 pb-0 f-16 w-500 text-gray">Are you doing any job?</p>
+                              <div class=" mt-2">
+                                <div class="form-check ">
+                                  <input class="form-check-input" type="radio" name="job" id="yes-job" checked>
+                                  <label class="form-check-label text-gray" for="yes-job">
+                                    Yes
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="job" id="no-job">
+                                  <label class="form-check-label text-gray" for="no-job">
+                                    No
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-12 mt-2" id="job-desc">
+                              <div class="form-flields ">
+                                <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="institute-name" placeholder="institute">
+                                  <label for="institute-name">Occupation</label>
+                                  <div class="form-icon">
+                                    <i class="fa-duotone fa-briefcase"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-flields ">
+                                <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="institute-name" placeholder="institute">
+                                  <label for="institute-name">Organization</label>
+                                  <div class="form-icon">
+                                    <i class="fa-solid fa-buildings"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-flields " id="customInput" style="display: none;">
+                                <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="customText" placeholder="profession">
+                                  <label for="customText">Your Profession</label>
+                                  <div class="form-icon">
+                                    <i class="fa-solid fa-user-tie-hair"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-12" id="other-desc" style="display: none;">
+                              <div class="form-flields ">
+                                <div class="form-floating">
+                                  <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea2" rows="3" style="height: 100px;"></textarea>
+                                  <label for="floatingTextarea2">Describe What you do</label>
+                                </div>
+                              </div>
+                            </div>
 
-          </div>
+                            <!-- verify documents -->
+                            <div class="col-lg-12 my-2">
+                              <p class="mb-0 pb-0 f-16 w-500 text-gray">Do you want to verify your identity?</p>
+                              <div class=" mt-2">
+                                <div class="form-check ">
+                                  <input class="form-check-input" type="radio" name="verify" id="yes-verify">
+                                  <label class="form-check-label text-gray" for="yes-verify">
+                                    Yes
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="verify" id="not-verify" checked>
+                                  <label class="form-check-label text-gray" for="not-verify">
+                                    No
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-12 " id="verify-doc" style="display: none;">
+                              <h2 class="f-16 w-500 text-dark my-3">Upload Your Documents for verification</h2>
 
-          <div class="form-flields " id="customInput" style="display: none;">
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="customText" placeholder="profession">
-              <label for="customText">Your Profession</label>
-              <div class="form-icon">
-                <i class="fa-solid fa-user-tie-hair"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12" id="other-desc" style="display: none;">
-          <div class="form-flields ">
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here"
-                id="floatingTextarea2" rows="3" style="height: 100px;"></textarea>
-              <label for="floatingTextarea2">Describe What you do</label>
-            </div>
-          </div>
-        </div>
+                              <!-- id card front -->
+                              <p class="f-14 w-500 text-gray mb-0 pb-0">1. Upload National Identity Card Front Picture
+                              </p>
 
-        <!-- verify documents -->
-        <div class="col-lg-12 my-2 px-2">
-          <p class="mb-0 pb-0 f-16 w-500 text-gray">Do you want to verify your identity?</p>
-          <div class=" mt-2">
-            <div class="form-check ">
-              <input class="form-check-input" type="radio" name="verify" id="yes-verify" >
-              <label class="form-check-label text-gray" for="yes-verify">
-                Yes
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="verify" id="not-verify" checked>
-              <label class="form-check-label text-gray" for="not-verify">
-                No
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12" id="verify-doc" style="display: none;">
-          <h2 class="f-16 w-500 text-dark my-3">Upload Your Documents for verification</h2>
+                              <div class=" position-relative custome-input-picture mt-2 mb-3">
+                                <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
+                                  <label for="file2" class="custom-file-upload upload-text">
+                                    <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
+                                      </Picture></span>
+                                  </label>
+                                  <span class="selected-file-name" style="display: none;"></span>
+                                  <span class="delete-icon" style="display: none;">&times;</span>
+                                  <input type="file" class="file-input" id="file2" aria-label="File browser example">
+                                </label>
+                                <div class="form-icon-pic">
+                                  <i class="fa-duotone fa-image"></i>
+                                </div>
+                              </div>
 
-          <!-- id card front -->
-          <p class="f-14 w-500 text-gray mb-0 pb-0">1. Upload National Identity Card Front Picture </p>
-        
-          <div class=" position-relative custome-input-picture mt-2 mb-3">
-            <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
-              <label for="file2" class="custom-file-upload upload-text">
-                <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
-                  </Picture></span>
-              </label>
-              <span class="selected-file-name" style="display: none;"></span>
-              <span class="delete-icon" style="display: none;">&times;</span>
-              <input type="file" class="file-input" id="file2" aria-label="File browser example">
-            </label>
-            <div class="form-icon-pic">
-              <i class="fa-duotone fa-image"></i>
-            </div>
-          </div>
+                              <!-- id card back -->
+                              <p class="f-14 w-500 text-gray mb-0 pb-0">2. Upload National Identity Card Back Picture
+                              </p>
 
-          <!-- id card back -->
-          <p class="f-14 w-500 text-gray mb-0 pb-0">2. Upload National Identity Card Back Picture </p>
-        
-          <div class=" position-relative custome-input-picture mt-2 mb-3">
-            <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
-              <label for="file3" class="custom-file-upload upload-text">
-                <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
-                  </Picture></span>
-              </label>
-              <span class="selected-file-name" style="display: none;"></span>
-              <span class="delete-icon" style="display: none;">&times;</span>
-              <input type="file" class="file-input" id="file3" aria-label="File browser example">
-            </label>
-            <div class="form-icon-pic">
-              <i class="fa-duotone fa-image"></i>
-            </div>
-          </div>
+                              <div class=" position-relative custome-input-picture mt-2 mb-3">
+                                <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
+                                  <label for="file3" class="custom-file-upload upload-text">
+                                    <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
+                                      </Picture></span>
+                                  </label>
+                                  <span class="selected-file-name" style="display: none;"></span>
+                                  <span class="delete-icon" style="display: none;">&times;</span>
+                                  <input type="file" class="file-input" id="file3" aria-label="File browser example">
+                                </label>
+                                <div class="form-icon-pic">
+                                  <i class="fa-duotone fa-image"></i>
+                                </div>
+                              </div>
 
-          <!-- Religion proof-->
-          <p class="f-14 w-500 text-gray mb-0 pb-0">3. Upload Religion Proof  </p>
-        
-          <div class=" position-relative custome-input-picture mt-2 mb-3">
-            <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
-              <label for="file4" class="custom-file-upload upload-text">
-                <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
-                  </Picture></span>
-              </label>
-              <span class="selected-file-name" style="display: none;"></span>
-              <span class="delete-icon" style="display: none;">&times;</span>
-              <input type="file" class="file-input" id="file4" aria-label="File browser example">
-            </label>
-            <div class="form-icon-pic">
-              <i class="fa-duotone fa-image"></i>
-            </div>
-          </div>
+                              <!-- Religion proof-->
+                              <p class="f-14 w-500 text-gray mb-0 pb-0">3. Upload Religion Proof </p>
 
-          <!-- qualification proof -->
+                              <div class=" position-relative custome-input-picture mt-2 mb-3">
+                                <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
+                                  <label for="file4" class="custom-file-upload upload-text">
+                                    <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
+                                      </Picture></span>
+                                  </label>
+                                  <span class="selected-file-name" style="display: none;"></span>
+                                  <span class="delete-icon" style="display: none;">&times;</span>
+                                  <input type="file" class="file-input" id="file4" aria-label="File browser example">
+                                </label>
+                                <div class="form-icon-pic">
+                                  <i class="fa-duotone fa-image"></i>
+                                </div>
+                              </div>
 
-          <p class="f-14 w-500 text-gray mb-0 pb-0">4. Upload Qualification Proof </p>
-        
-          <div class=" position-relative custome-input-picture mt-2 mb-3">
-            <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
-              <label for="file5" class="custom-file-upload upload-text">
-                <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
-                  </Picture></span>
-              </label>
-              <span class="selected-file-name" style="display: none;"></span>
-              <span class="delete-icon" style="display: none;">&times;</span>
-              <input type="file" class="file-input" id="file5" aria-label="File browser example">
-            </label>
-            <div class="form-icon-pic">
-              <i class="fa-duotone fa-image"></i>
-            </div>
-          </div>
+                              <!-- qualification proof -->
 
-           <!-- job proof -->
+                              <p class="f-14 w-500 text-gray mb-0 pb-0">4. Upload Qualification Proof </p>
 
-           <p class="f-14 w-500 text-gray mb-0 pb-0">5. Upload Job Proof </p>
-        
-           <div class=" position-relative custome-input-picture mt-2 mb-3">
-             <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
-               <label for="file6" class="custom-file-upload upload-text">
-                 <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
-                   </Picture></span>
-               </label>
-               <span class="selected-file-name" style="display: none;"></span>
-               <span class="delete-icon" style="display: none;">&times;</span>
-               <input type="file" class="file-input" id="file6" aria-label="File browser example">
-             </label>
-             <div class="form-icon-pic">
-               <i class="fa-duotone fa-image"></i>
-             </div>
-           </div>
-        </div>
-      </div>
-      <input type="button" data-page="5" name="previous" class="previous action-button mt-3"
-        value="Previous" />
-      <input id="submit" class="hs-button primary large action-button next mt-3" type="submit"
-        value="Submit">
+                              <div class=" position-relative custome-input-picture mt-2 mb-3">
+                                <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
+                                  <label for="file5" class="custom-file-upload upload-text">
+                                    <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
+                                      </Picture></span>
+                                  </label>
+                                  <span class="selected-file-name" style="display: none;"></span>
+                                  <span class="delete-icon" style="display: none;">&times;</span>
+                                  <input type="file" class="file-input" id="file5" aria-label="File browser example">
+                                </label>
+                                <div class="form-icon-pic">
+                                  <i class="fa-duotone fa-image"></i>
+                                </div>
+                              </div>
 
-    </fieldset>
+                              <!-- job proof -->
+
+                              <p class="f-14 w-500 text-gray mb-0 pb-0">5. Upload Job Proof </p>
+
+                              <div class=" position-relative custome-input-picture mt-2 mb-3">
+                                <label class="file pic-input mb-3 w-100 pt-2" style="position: relative;">
+                                  <label for="file6" class="custom-file-upload upload-text">
+                                    <span style="color: rgba(77, 73, 73, 0.5);" class="">Upload Picture/PDF <Picture>
+                                      </Picture></span>
+                                  </label>
+                                  <span class="selected-file-name" style="display: none;"></span>
+                                  <span class="delete-icon" style="display: none;">&times;</span>
+                                  <input type="file" class="file-input" id="file6" aria-label="File browser example">
+                                </label>
+                                <div class="form-icon-pic">
+                                  <i class="fa-duotone fa-image"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <input type="button" data-page="5" name="previous" class="previous action-button mt-3"
+                            value="Previous" />
+                          <input id="submit" class="hs-button primary large action-button next mt-3" type="submit"
+                            value="Submit">
+
+                        </fieldset>
 
                       </form>
 
                     </div>
-                    <div class="col-lg-4  mx-auto">
-                      <div class="px-3">
+                    <div class="col-lg-4  mx-auto mt-5 pt-2 d-lg-block d-none">
+                      <div class="px-3 mt-5">
                         <div class="couple-card position-relative">
                           <div class="couple-card-deatils">
 
-                            <div class="d-flex align-items-center view-deatils ms-auto">
-                              <i class="fa-duotone fa-eye"></i> 12
-                            </div>
-                          </div>
-                          <div class="carousel__slide">
+                            <div class="carousel__slide">
 
-                            <figure>
-                              <div>
-                                <img src="assets/images/girls/g7.jpg" alt="">
+                              <figure>
+                                <div>
+                                  <img src="assets/images/girls/g7.jpg" alt="">
 
-                              </div>
-                            </figure>
-                          </div>
-                          <div class="couple-card-content">
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                              <h5 class="mb-0 pb-0 f-16">Amaira Khan</h5>
-                              <div class="not-verified">Not Verified</div>
+                                </div>
+                              </figure>
                             </div>
-                            <div class="d-flex align-items-center flex-wrap mb-2 pb-1">
-                              <div class="couple-tag">
-                                BSc
-                              </div>
-                              <div class="couple-tag">
-                                IT Professional
-                              </div>
-                              <div class="couple-tag">
-                                Islamabad, Pakisatn
-                              </div>
-                              <div class="couple-tag">
-                                Unmarried
-                              </div>
-                            </div>
-                            <hr class="line">
-                            <div class="couple-buttons mt-3 d-flex align-items-center justify-content-evenly">
-                              <a href="" class="disabled">Chat Now</a>
-                              <a href="" class="">Details</a>
-                            </div>
+
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
+                  </div>
                 </div>
-              </div>
-              <div class="right-illus2 d-md-block d-none">
-                <img src="assets/images/3D-icon/Group 8 (1).png" alt="" class="img-fluid">
-              </div>
-              <div class="left-illus2 d-md-block d-none">
-                <img src="assets/images/3D-icon/Group 7 (2).png" alt="" class="img-fluid">
+                <div class="right-illus2 d-md-block d-none">
+                  <img src="assets/images/3D-icon/Group 8 (1).png" alt="" class="img-fluid">
+                </div>
+                <div class="left-illus2 d-md-block d-none">
+                  <img src="assets/images/3D-icon/Group 7 (2).png" alt="" class="img-fluid">
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
   </main>
@@ -1010,7 +1057,31 @@
       $('.js-example-basic-single').select2();
     })
   </script>
+  <!-- ask divorce and widow -->
+  <!-- <script>
+    $(document).ready(function () {
+      // Initially hide the .ask-divorce and .ask-widow divs
+      $(".ask-divorce, .ask-widow").hide();
 
+      // When the user selects "Yes" in the "Are you married before and looking for another marriage?" question
+      $("input[name='flexRadioDefault']").change(function () {
+        if ($(this).attr("id") === "flexRadioDefault1") {
+          $(".ask-divorce").show();
+        } else {
+          $(".ask-divorce, .ask-widow").hide();
+        }
+      });
+
+      // When the user selects "Yes" in the "Are you divorced?" question
+      $("input[name='divorced']").change(function () {
+        if ($(this).attr("id") === "divorcedNo") {
+          $(".ask-widow").show();
+        } else {
+          $(".ask-widow").hide();
+        }
+      });
+    });
+  </script> -->
 </body>
 
 </html>
