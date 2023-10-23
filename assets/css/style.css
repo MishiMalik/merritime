@@ -594,6 +594,27 @@ body {
   color: #738ea5;
   width: 100%; }
 
+.textarea-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #738ea5; }
+
+.textarea-input {
+  padding-right: 30px !important;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 0;
+  border-bottom: 1px solid #b6b3b3 !important;
+  background: transparent;
+  border-radius: 0; }
+  .textarea-input:active, .textarea-input:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #E32524 !important; }
+  @media only screen and (max-width: 600px) {
+    .textarea-input {
+      font-size: 14px; } }
+
 .social-top {
   border: 2px solid #F71800; }
 
