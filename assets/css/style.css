@@ -869,7 +869,7 @@ header {
     .carousel__slide div:before {
       display: block;
       content: "";
-      padding-top: 125%; }
+      padding-top: 100%; }
     .carousel__slide div > img {
       position: absolute;
       top: 0;
@@ -895,25 +895,94 @@ header {
 .couple-card {
   border-radius: 16px;
   overflow: hidden;
-  background-color: white; }
-  .couple-card .couple-card-content {
-    padding: 20px; }
-    .couple-card .couple-card-content--box {
-      background-color: #ba3938;
-      padding: 20px; }
-      .couple-card .couple-card-content--box h1 {
-        color: #fff;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal; }
-      .couple-card .couple-card-content--box p {
-        color: #fff;
-        font-family: Inter;
-        font-size: 9px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal; }
+  background-color: white;
+  overflow: hidden; }
+  .couple-card .couple-card-content--box {
+    padding: 15px 12px 0px 12px; }
+    .couple-card .couple-card-content--box h1 {
+      color: #000;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-align: center; }
+    .couple-card .couple-card-content--box p {
+      color: rgba(0, 0, 0, 0.44);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center; }
+    .couple-card .couple-card-content--box .matches {
+      border-radius: 5px;
+      border: 1px solid #E32524;
+      color: #E32524;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding: 5px 10px;
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px auto;
+      margin-bottom: 10px; }
+    .couple-card .couple-card-content--box .views {
+      color: #E32524;
+      font-size: 7px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-align: center;
+      font-size: 14px; }
+      .couple-card .couple-card-content--box .views img {
+        height: 16px;
+        width: 16px; }
+  .couple-card .couple-card-content .couple-card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px; }
+    .couple-card .couple-card-content .couple-card-buttons div {
+      flex-grow: 1;
+      width: 100%; }
+      .couple-card .couple-card-content .couple-card-buttons div a {
+        background-color: #E32524;
+        flex-grow: 1;
+        width: 100%;
+        padding: 10px 15px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        text-decoration: none; }
+        .couple-card .couple-card-content .couple-card-buttons div a img {
+          height: 17px; }
+  .couple-card .couple-card-content-more {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #E32524;
+    transition: all .5s; }
+  .couple-card:hover .couple-card-content-more {
+    top: 0%; }
+
+.border-left {
+  border-right: 1px solid white; }
+
+.get-registered {
+  background: url("/assets/images/couple/slide-1.jpg");
+  background-size: cover;
+  height: 400px;
+  background-repeat: no-repeat; }
 
 .form-box2 {
   position: relative;
