@@ -1,7 +1,7 @@
 $('.single-item').slick({
 
     autoplay: true,
-    autoplaySpeed: 2500,
+    // autoplaySpeed: 2500,
 });
 
 // multicard
