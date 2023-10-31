@@ -2150,3 +2150,44 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .about-flvr {
   height: 60px !important; }
+
+.steps-timeline .steps-time-line-div .steps-timeline-image img {
+  height: 150px;
+  width: auto; }
+
+.steps-timeline .steps-time-line-div .steps-timeline-card-l {
+  border-left: 1px solid #E32524;
+  position: relative;
+  padding: 0px !important; }
+  .steps-timeline .steps-time-line-div .steps-timeline-card-l::after {
+    content: " ";
+    height: 15px;
+    width: 15px;
+    background-color: #E32524;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: -8px; }
+
+.steps-timeline .steps-time-line-div .steps-timeline-card-r {
+  border-right: 1px solid #E32524;
+  position: relative;
+  padding: 0px !important; }
+  .steps-timeline .steps-time-line-div .steps-timeline-card-r::after {
+    content: " ";
+    height: 15px;
+    width: 15px;
+    background-color: #E32524;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: -8px; }
+
+.steps-timeline .steps-time-line-div .steps-timeline-card {
+  padding: 20px 20px 40px 20px !important; }
+  .steps-timeline .steps-time-line-div .steps-timeline-card h1 {
+    font-size: 16px; }
+  .steps-timeline .steps-time-line-div .steps-timeline-card h1 {
+    font-size: 16px; }
+  .steps-timeline .steps-time-line-div .steps-timeline-card p {
+    font-size: 14px; }

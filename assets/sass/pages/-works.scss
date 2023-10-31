@@ -1,0 +1,54 @@
+.steps-timeline {
+  .steps-time-line-div {
+    // display: flex;
+    // align-items: flex-start;
+    .steps-timeline-image {
+      img {
+        height: 150px;
+        width: auto;
+      }
+    }
+    .steps-timeline-card-l {
+      border-left: 1px solid $primary-dark;
+      position: relative;
+      padding: 0px !important;
+      &::after{
+        content: " ";
+        height: 15px;
+        width: 15px;
+        background-color: $primary-dark;
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        left: -8px;
+      }
+    }
+    .steps-timeline-card-r{
+        border-right: 1px solid $primary-dark;
+        position: relative;
+        padding: 0px !important;
+        &::after{
+          content: " ";
+          height: 15px;
+          width: 15px;
+          background-color: $primary-dark;
+          border-radius: 100%;
+          position: absolute;
+          top: 0;
+          right: -8px;
+        }
+      }
+    .steps-timeline-card {
+        padding: 20px 20px 40px 20px !important;
+      h1 {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
