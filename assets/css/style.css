@@ -904,6 +904,11 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
+    @media only screen and (min-width: 1600px) {
+      .header-slider .slide-content {
+        width: 40%;
+        left: 30%;
+        right: 30%; } }
     @media only screen and (max-width: 991px) {
       .header-slider .slide-content {
         width: 80%;
