@@ -1,6 +1,9 @@
 .footer{
     background-color: $primary-dark;
     padding: 30px 40px;
+    @media only screen and (max-width:767px){
+        padding: 30px 10px;
+    }
     .footer-logo{
         img{
             height: 70px;
@@ -16,6 +19,9 @@
     .border-cont{
         border: 1px solid white;
         padding: 30px 30px;
+        @media only screen and (max-width:767px){
+            padding: 30px 10px;
+        }
     }
     .social-div{
         height: 35px;

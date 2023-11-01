@@ -41,9 +41,9 @@
                 <a class="navbar-brand py-0" href="#">
                     <img src="assets/images/Untitled-1 (2).png" alt="">
                 </a>
-                <div class="chat ms-auto me-2 mt-1 d-lg-none chat-btn">
+                <!-- <div class="chat ms-auto me-2 mt-1 d-lg-none chat-btn">
                     <i class="fa-duotone fa-messages"></i>
-                </div>
+                </div> -->
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -54,21 +54,39 @@
                 </button>
                 <div class="collapse navbar-collapse align-items-lg-center" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-
+                        <!-- <li class="nav-item d-lg-none d-flex">
+                            <div class="px-3 mb-3">
+                                <div class="dropdown ">
+                                    <a class=" dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/images/ppp.avif" alt="" class="profile-pic">
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#"><i class="fa-duotone fa-user me-2 "></i>
+                                                Profile</a></li>
+                                        <li><a class="dropdown-item" href="#"><i
+                                                    class="fa-duotone fa-user-pen me-2"></i>
+                                                Edit</a></li>
+                                        <li><a class="dropdown-item" href="#"><i
+                                                    class="fa-duotone fa-right-from-bracket me-2"></i> Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li> -->
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="index.html"> <i
+                            <a class="nav-link active-nav" aria-current="page" href="index.html"> <i
                                     class="fa-duotone fa-house me-2 d-lg-none"></i>Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active-nav" href="about.html"><i
-                                    class="fa-duotone fa-address-card me-2 d-lg-none "></i>About
+                            <a class="nav-link" href="#"><i class="fa-duotone fa-address-card me-2 d-lg-none "></i>About
                                 Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="how-it-work.html"><i class="fa-duotone fa-stairs me-2 d-lg-none"></i>How it
+                            <a class="nav-link" href="#"><i class="fa-duotone fa-stairs me-2 d-lg-none"></i>How it
                                 Works</a>
                         </li>
-                        <li class="nav-item d-lg-none">
+
+                        <!-- <li class="nav-item d-lg-none">
                             <a class="nav-link" href="#"><i class="fa-duotone fa-user-vneck me-2"></i>View Profile</a>
                         </li>
                         <li class="nav-item d-lg-none">
@@ -76,37 +94,31 @@
                         </li>
                         <li class="nav-item d-lg-none">
                             <a class="nav-link" href="#"><i class="fa-duotone fa-right-from-bracket me-2"></i>Logout</a>
-                        </li>
+                        </li> -->
 
                         <li
-                            class="nav-item d-lg-none d-flex flex-column justify-content-center align-items-center text-center">
-                            <a href="register.html" class="main-btn mt-4">Register</a></a>
+                            class="nav-item d-lg-none d-flex flex-column justify-content-center align-items-center text-center ">
+
+                            <a class="nav-link" href="#">
+                                <a href="login.html" class="main-btn-blank pb-0 mt-5 mb-3 text-center">
+                                    <i class="fa-duotone fa-right-from-bracket me-2"></i>Login
+                                </a>
+                                <a href="register.html" class="main-btn mt-lg-0 ">Register</a></a>
                         </li>
                     </ul>
 
 
                     <div class="align-items-center d-lg-flex d-none">
-                        <div class="d-lg-block d-none">
-                            <div class="chat me-4 chat-btn">
+                        <!-- <div class="d-lg-block d-none">
+                            <div class="chat me-4 chat-btn mt-1">
                                 <i class="fa-duotone fa-messages"></i>
                             </div>
+                        </div> -->
+                        <div class="d-flex mb-2">
+                            <a href="login.html" class="main-btn-blank pb-0">Login</a>
+                            <a href="register.html" class="main-btn ms-3">Register</a>
                         </div>
-                        <div class="dropdown ">
-                            <a class=" dropdown-toggle " href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="assets/images/ppp.avif" alt="" class="profile-pic">
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#"><i class="fa-duotone fa-user me-2 "></i>
-                                        Profile</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-duotone fa-user-pen me-2"></i>Edit
-                                        Profile</a></li>
-                                <li><a class="dropdown-item" href="#"><i
-                                            class="fa-duotone fa-badge-check me-2"></i>Verification</a></li>
-                                <li><a class="dropdown-item" href="index.html"><i
-                                            class="fa-duotone fa-right-from-bracket me-2"></i> Logout</a></li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -114,15 +126,17 @@
 
     </header>
     <main>
-        <section class="header-slider ">
-            <div class="">
-                <div class=" position-relative">
+        <section class="header-slider">
+            <div class="container">
+                <div class="row position-relative">
                     <div class="single-item">
-                        <div><img src="assets/images/couple/pexels-camera-treasure-12153955.jpg" alt=""></div>
+                        <div><img src="assets/images/couple/15-1-scaled.jpg" alt=""></div>
+                        <!-- <div><img src="assets/images/couple/pexels-camera-treasure-12153955.jpg" alt=""></div>
+                        <div><img src="assets/images/couple/pexels-the-shaan-photography-11762791.jpg" alt=""></div> -->
                     </div>
                     <div class="slide-content">
                         <div>
-                            <h2 class="mt-0 pt-0">About Us</h2>
+                            <h2 class="mt-0 pt-0">Find Your Perfect Match</h2>
                             <p>Welcome and open yourself to your truest love this year with us! With the Release Process
                             </p>
                         </div>
@@ -131,1103 +145,942 @@
                 </div>
             </div>
         </section>
-    
-        <section class="section mt-4 mb-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6  col-md-5 mx-auto ">
-                        <div class="about-image-div">
-                            <img src="assets/images/couple/muslim-couple.jpg" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-6 ps-xl-5 col-md-8 mx-auto">
-                        <div class="about-content ">
-                            <div class="heading-div align-items-start mb-3">
-                                <img src="assets/images/Group 28.png" alt="" class="about-flvr">
-                                <h1 class="main-heading2 mb-2 future w-500 text-start mb-2">Find Your Perfect Match</h1>
-
-                            </div>
-
-                            <p>It is a long established fact that a reader will be distracted by the readable content of
-                                a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                more-or-less normal distribution of letters, as opposed to using now use Lorem Ipsum</p>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of
-                                a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                more-or-less normal distribution of letters, as opposed to using now use Lorem Ipsum</p>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-          <!-- counter status -->
-     <section class="section" style="background-color: #f6f6f6;">
-        <div class="container ">
-            <div class="row">
-                <div class="col-xl-11 col-lg-10 col-md-8 counter-row mx-auto">
-                    <div class="top-flvr2">
-                        <img src="assets/images/Group 28.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="bottom-flvr">
-                            <img src="assets/images/Group 28.png" alt="" class="img-fluid">
-                            </div>
-                    <img src="assets/images/Group 28 - Copy.png" alt="" class="left-flvr">
-                    <img src="assets/images/Group 28 - Copy (2).png" alt="" class="right-flvr">
-                    <div class="row" id="counter">
-                        <div class="col-lg-3 mb-lg-0 mb-4">
-                            <div class="counter-div ">
-                                <h1 class="count future" data-number="950"></h1>
-                                <h2 class="text">Total Weddings</h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-3  mb-lg-0 mb-4">
-                            <div class="counter-div ">
-                                <h1 class="count future" data-number="460"></h1>
-                                <h2 class="text">Total Profiles</h2>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3  mb-lg-0 mb-4">
-                            <div class="counter-div ">
-                                <h1 class="count future" data-number="860"></h1>
-                                <h2 class="text">Registered Profiles</h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-3  mb-lg-0 mb-4">
-                            <div class="counter-div ">
-                                <h1 class="count future" data-number="860"></h1>
-                                <h2 class="text">Premium Profiles</h2>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- slider -->
-        <section class="section">
+        <section>
             <div class="container ">
-                <div class="pt-4 pb-3">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="heading-div mb-3">
-                                <h1 class="main-heading mb-2 future w-500">Suggested For You</h1>
-                                <img src="assets/images/Group 28.png" alt="">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col-lg-12">
-                            <div class="group-card-slider owl-theme owl-carousel">
-                                <div class="slider-div">
-                                    <div class="couple-card2 position-relative">
-                                        <div class="status-verify2">
-                                            <img src="assets/images/verifyy.svg" alt="" class="me-1">
-                                            Verified
-                                        </div>
-                                        <div class="couple-card-img">
-                                            <div class="carousel__slide">
-                                                <figure>
-                                                    <div>
-                                                        <img src="assets/images/girls/g3.jpg" alt="">
-
-                                                    </div>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="couple-card-content">
-                                            <div class="couple-card-content--box">
-
-                                                <h1 class="mb-1">Alishba Tahir</h1>
-                                                <p>Marketing Manager at Ubisoft</p>
-                                                <div class="matches my-2">
-                                                    3 out of 7 Profile Matches
-                                                </div>
-                                                <div
-                                                    class="views my-3 py-1 d-flex align-items-center justify-content-center">
-                                                    <img src="assets/images/view.svg" alt="" style="width:fit-content;"
-                                                        class="me-2">
-                                                    12 Profile Views
-                                                </div>
-                                            </div>
-                                            <hr class="buttons-border">
-                                            <div class="couple-card-buttons">
-                                                <div class="">
-                                                    <a href="" class="">
-                                                        
-                                                        <i class="fa-regular fa-comment-dots me-1"></i>
-                                                        Chat
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="">
-                                                        More
-                                                        <i class="bi bi-arrow-right-circle ms-1"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="couple-card-content-more">
-                                            <h2 class="mb-4 mt-3">More Details</h2>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-book-open-cover"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    12 Years Education
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-user-tie-hair"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Doctor by profession
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-calendar-image"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    DOB: 12-10-1999
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-face-smile-hearts"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Single
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-castle"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Muslim
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-house-user"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Islamabad, Fedral, Pakistan
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-user-vneck"></i>
-                                                </div>
-                                                <div class="detail detail-desc">
-                                                    I am a 32-year-old Muslim doctor from Pakistan. Lorem ipsum dolor
-                                                    sit amet consectetur, adipisicing elit. Iure obcaecati explicabo
-                                                    illum at? Dicta earum autem a ab, nemo odit?
-                                                </div>
-                                            </div>
-
-                                        </div>
-
+                <div class="">
+                    <!-- <div class="responsive-cards">
+                        <div class="px-2 mx-auto">
+                            <div class="couple-card position-relative">
+                                <div class="couple-card-deatils">
+                                    <div class="d-flex align-items-center view-deatils ms-auto">
+                                        <i class="fa-duotone fa-eye"></i> 12
                                     </div>
                                 </div>
-
-
-                                <div class="slider-div">
-                                    <div class="couple-card2 position-relative">
-                                        <div class="status-verify2">
-                                            <img src="assets/images/verifyy.svg" alt="" class="me-1">
-                                            Verified
+                                <div class="carousel__slide">
+                                    
+                                    <figure>
+                                        <div>
+                                            <img src="assets/images/girls/g2.jpg" alt="">
+                                          
                                         </div>
-                                        <div class="couple-card-img">
-                                            <div class="carousel__slide">
-                                                <figure>
-                                                    <div>
-                                                        <img src="assets/images/girls/g3.jpg" alt="">
-
-                                                    </div>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="couple-card-content">
-                                            <div class="couple-card-content--box">
-
-                                                <h1 class="mb-1">Alishba Tahir</h1>
-                                                <p>Marketing Manager at Ubisoft</p>
-                                                <div class="matches my-2">
-                                                    3 out of 7 Profile Matches
-                                                </div>
-                                                <div
-                                                    class="views my-3 py-1 d-flex align-items-center justify-content-center">
-                                                    <img src="assets/images/view.svg" alt="" style="width:fit-content;"
-                                                        class="me-2">
-                                                    12 Profile Views
-                                                </div>
-                                            </div>
-                                            <hr class="buttons-border">
-                                            <div class="couple-card-buttons">
-                                                <div class="">
-                                                    <a href="" class="">
-                                                        
-                                                        <i class="fa-regular fa-comment-dots me-1"></i>
-                                                        Chat
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="">
-                                                        More
-                                                        <i class="bi bi-arrow-right-circle ms-1"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="couple-card-content-more">
-                                            <h2 class="mb-4 mt-3">More Details</h2>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-book-open-cover"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    12 Years Education
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-user-tie-hair"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Doctor by profession
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-calendar-image"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    DOB: 12-10-1999
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-face-smile-hearts"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Single
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-castle"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Muslim
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-house-user"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Islamabad, Fedral, Pakistan
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-user-vneck"></i>
-                                                </div>
-                                                <div class="detail detail-desc">
-                                                    I am a 32-year-old Muslim doctor from Pakistan. Lorem ipsum dolor
-                                                    sit amet consectetur, adipisicing elit. Iure obcaecati explicabo
-                                                    illum at? Dicta earum autem a ab, nemo odit?
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
+                                    </figure>
                                 </div>
-
-
-                                <div class="slider-div">
-                                    <div class="couple-card2 position-relative">
-                                        <div class="status-verify2">
-                                            <img src="assets/images/verifyy.svg" alt="" class="me-1">
-                                            Verified
-                                        </div>
-                                        <div class="couple-card-img">
-                                            <div class="carousel__slide">
-                                                <figure>
-                                                    <div>
-                                                        <img src="assets/images/girls/g3.jpg" alt="">
-
-                                                    </div>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="couple-card-content">
-                                            <div class="couple-card-content--box">
-
-                                                <h1 class="mb-1">Alishba Tahir</h1>
-                                                <p>Marketing Manager at Ubisoft</p>
-                                                <div class="matches my-2">
-                                                    3 out of 7 Profile Matches
-                                                </div>
-                                                <div
-                                                    class="views my-3 py-1 d-flex align-items-center justify-content-center">
-                                                    <img src="assets/images/view.svg" alt="" style="width:fit-content;"
-                                                        class="me-2">
-                                                    12 Profile Views
-                                                </div>
-                                            </div>
-                                            <hr class="buttons-border">
-                                            <div class="couple-card-buttons">
-                                                <div class="">
-                                                    <a href="" class="">
-                                                        
-                                                        <i class="fa-regular fa-comment-dots me-1"></i>
-                                                        Chat
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="">
-                                                        More
-                                                        <i class="bi bi-arrow-right-circle ms-1"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="couple-card-content-more">
-                                            <h2 class="mb-4 mt-3">More Details</h2>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-book-open-cover"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    12 Years Education
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-user-tie-hair"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Doctor by profession
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-calendar-image"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    DOB: 12-10-1999
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-face-smile-hearts"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Single
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-castle"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Muslim
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-house-user"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Islamabad, Fedral, Pakistan
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-user-vneck"></i>
-                                                </div>
-                                                <div class="detail detail-desc">
-                                                    I am a 32-year-old Muslim doctor from Pakistan. Lorem ipsum dolor
-                                                    sit amet consectetur, adipisicing elit. Iure obcaecati explicabo
-                                                    illum at? Dicta earum autem a ab, nemo odit?
-                                                </div>
-                                            </div>
-
-                                        </div>
-
+                                <div class="couple-card-content">
+                                   <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h1 class="mb-0 pb-0">Amaira Khan</h1>
+                                    <div class="not-verified">Not Verified</div>
+                                   </div>
+                                    <div class="d-flex align-items-center flex-wrap mb-2 pb-1">
+                                        <div class="couple-tag">
+                                            BSc
+                                          </div>
+                                          <div class="couple-tag">
+                                              IT Professional
+                                          </div>
+                                          <div class="couple-tag">
+                                              Islamabad, Pakisatn
+                                          </div>
+                                          <div class="couple-tag">
+                                             Unmarried
+                                          </div>
                                     </div>
-                                </div>
-
-                                <div class="slider-div">
-                                    <div class="couple-card2 position-relative">
-                                        <div class="status-verify2">
-                                            <img src="assets/images/verifyy.svg" alt="" class="me-1">
-                                            Verified
-                                        </div>
-                                        <div class="couple-card-img">
-                                            <div class="carousel__slide">
-                                                <figure>
-                                                    <div>
-                                                        <img src="assets/images/girls/g3.jpg" alt="">
-
-                                                    </div>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="couple-card-content">
-                                            <div class="couple-card-content--box">
-
-                                                <h1 class="mb-1">Alishba Tahir</h1>
-                                                <p>Marketing Manager at Ubisoft</p>
-                                                <div class="matches my-2">
-                                                    3 out of 7 Profile Matches
-                                                </div>
-                                                <div
-                                                    class="views my-3 py-1 d-flex align-items-center justify-content-center">
-                                                    <img src="assets/images/view.svg" alt="" style="width:fit-content;"
-                                                        class="me-2">
-                                                    12 Profile Views
-                                                </div>
-                                            </div>
-                                            <hr class="buttons-border">
-                                            <div class="couple-card-buttons">
-                                                <div class="">
-                                                    <a href="" class="">
-                                                        
-                                                        <i class="fa-regular fa-comment-dots me-1"></i>
-                                                        Chat
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="">
-                                                        More
-                                                        <i class="bi bi-arrow-right-circle ms-1"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="couple-card-content-more">
-                                            <h2 class="mb-4 mt-3">More Details</h2>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-book-open-cover"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    12 Years Education
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-user-tie-hair"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Doctor by profession
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-calendar-image"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    DOB: 12-10-1999
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-face-smile-hearts"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Single
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-castle"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Muslim
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-house-user"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Islamabad, Fedral, Pakistan
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-user-vneck"></i>
-                                                </div>
-                                                <div class="detail detail-desc">
-                                                    I am a 32-year-old Muslim doctor from Pakistan. Lorem ipsum dolor
-                                                    sit amet consectetur, adipisicing elit. Iure obcaecati explicabo
-                                                    illum at? Dicta earum autem a ab, nemo odit?
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="slider-div">
-                                    <div class="couple-card2 position-relative">
-                                        <div class="status-verify2">
-                                            <img src="assets/images/verifyy.svg" alt="" class="me-1">
-                                            Verified
-                                        </div>
-                                        <div class="couple-card-img">
-                                            <div class="carousel__slide">
-                                                <figure>
-                                                    <div>
-                                                        <img src="assets/images/girls/g3.jpg" alt="">
-
-                                                    </div>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="couple-card-content">
-                                            <div class="couple-card-content--box">
-
-                                                <h1 class="mb-1">Alishba Tahir</h1>
-                                                <p>Marketing Manager at Ubisoft</p>
-                                                <div class="matches my-2">
-                                                    3 out of 7 Profile Matches
-                                                </div>
-                                                <div
-                                                    class="views my-3 py-1 d-flex align-items-center justify-content-center">
-                                                    <img src="assets/images/view.svg" alt="" style="width:fit-content;"
-                                                        class="me-2">
-                                                    12 Profile Views
-                                                </div>
-                                            </div>
-                                            <hr class="buttons-border">
-                                            <div class="couple-card-buttons">
-                                                <div class="">
-                                                    <a href="" class="">
-                                                        
-                                                        <i class="fa-regular fa-comment-dots me-1"></i>
-                                                        Chat
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="">
-                                                        More
-                                                        <i class="bi bi-arrow-right-circle ms-1"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="couple-card-content-more">
-                                            <h2 class="mb-4 mt-3">More Details</h2>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-book-open-cover"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    12 Years Education
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-user-tie-hair"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Doctor by profession
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-calendar-image"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    DOB: 12-10-1999
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-face-smile-hearts"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Single
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-castle"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Muslim
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-house-user"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Islamabad, Fedral, Pakistan
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-user-vneck"></i>
-                                                </div>
-                                                <div class="detail detail-desc">
-                                                    I am a 32-year-old Muslim doctor from Pakistan. Lorem ipsum dolor
-                                                    sit amet consectetur, adipisicing elit. Iure obcaecati explicabo
-                                                    illum at? Dicta earum autem a ab, nemo odit?
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="slider-div">
-                                    <div class="couple-card2 position-relative">
-                                        <div class="status-verify2">
-                                            <img src="assets/images/verifyy.svg" alt="" class="me-1">
-                                            Verified
-                                        </div>
-                                        <div class="couple-card-img">
-                                            <div class="carousel__slide">
-                                                <figure>
-                                                    <div>
-                                                        <img src="assets/images/girls/g3.jpg" alt="">
-
-                                                    </div>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="couple-card-content">
-                                            <div class="couple-card-content--box">
-
-                                                <h1 class="mb-1">Alishba Tahir</h1>
-                                                <p>Marketing Manager at Ubisoft</p>
-                                                <div class="matches my-2">
-                                                    3 out of 7 Profile Matches
-                                                </div>
-                                                <div
-                                                    class="views my-3 py-1 d-flex align-items-center justify-content-center">
-                                                    <img src="assets/images/view.svg" alt="" style="width:fit-content;"
-                                                        class="me-2">
-                                                    12 Profile Views
-                                                </div>
-                                            </div>
-                                            <hr class="buttons-border">
-                                            <div class="couple-card-buttons">
-                                                <div class="">
-                                                    <a href="" class="">
-                                                       
-                                                        <i class="fa-regular fa-comment-dots me-1"></i>
-                                                        Chat
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="">
-                                                        More
-                                                        <i class="bi bi-arrow-right-circle ms-1"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="couple-card-content-more">
-                                            <h2 class="mb-4 mt-3">More Details</h2>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-book-open-cover"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    12 Years Education
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-user-tie-hair"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Doctor by profession
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-calendar-image"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    DOB: 12-10-1999
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-face-smile-hearts"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Single
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-castle"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Muslim
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-house-user"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Islamabad, Fedral, Pakistan
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-user-vneck"></i>
-                                                </div>
-                                                <div class="detail detail-desc">
-                                                    I am a 32-year-old Muslim doctor from Pakistan. Lorem ipsum dolor
-                                                    sit amet consectetur, adipisicing elit. Iure obcaecati explicabo
-                                                    illum at? Dicta earum autem a ab, nemo odit?
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
-                                <div class="slider-div">
-                                    <div class="couple-card2 position-relative">
-                                        <div class="status-verify2">
-                                            <img src="assets/images/verifyy.svg" alt="" class="me-1">
-                                            Verified
-                                        </div>
-                                        <div class="couple-card-img">
-                                            <div class="carousel__slide">
-                                                <figure>
-                                                    <div>
-                                                        <img src="assets/images/girls/g3.jpg" alt="">
-
-                                                    </div>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="couple-card-content">
-                                            <div class="couple-card-content--box">
-
-                                                <h1 class="mb-1">Alishba Tahir</h1>
-                                                <p>Marketing Manager at Ubisoft</p>
-                                                <div class="matches my-2">
-                                                    3 out of 7 Profile Matches
-                                                </div>
-                                                <div
-                                                    class="views my-3 py-1 d-flex align-items-center justify-content-center">
-                                                    <img src="assets/images/view.svg" alt="" style="width:fit-content;"
-                                                        class="me-2">
-                                                    12 Profile Views
-                                                </div>
-                                            </div>
-                                            <hr class="buttons-border">
-                                            <div class="couple-card-buttons">
-                                                <div class="">
-                                                    <a href="" class="">
-                                                      
-                                                        <i class="fa-regular fa-comment-dots me-1"></i>
-                                                        Chat
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="">
-                                                        More
-                                                        <i class="bi bi-arrow-right-circle ms-1"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="couple-card-content-more">
-                                            <h2 class="mb-4 mt-3">More Details</h2>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-book-open-cover"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    12 Years Education
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-user-tie-hair"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Doctor by profession
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-calendar-image"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    DOB: 12-10-1999
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-face-smile-hearts"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Single
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-castle"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Muslim
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-house-user"></i>
-                                                </div>
-                                                <div class="detail">
-                                                    Islamabad, Fedral, Pakistan
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-start">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-user-vneck"></i>
-                                                </div>
-                                                <div class="detail detail-desc">
-                                                    I am a 32-year-old Muslim doctor from Pakistan. Lorem ipsum dolor
-                                                    sit amet consectetur, adipisicing elit. Iure obcaecati explicabo
-                                                    illum at? Dicta earum autem a ab, nemo odit?
-                                                </div>
-                                            </div>
-
-                                        </div>
-
+                                    <hr class="line">
+                                    <div class="couple-buttons mt-3 d-flex align-items-center justify-content-evenly">
+                                       <a href="" class="disabled">Chat Now</a>
+                                       <a href="">More Details</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-                    </div>
+                        <div class="px-2">
+                            <div class="couple-card position-relative">
+                                <div class="couple-card-deatils">
+                                   
+                                    <div class="d-flex align-items-center view-deatils ms-auto">
+                                        <i class="fa-duotone fa-eye"></i> 12
+                                    </div>
+                                </div>
+                                <div class="carousel__slide">
+                                    
+                                    <figure>
+                                        <div>
+                                            <img src="assets/images/girls/g3.jpg" alt="">
+                                          
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="couple-card-content">
+                                   <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h1 class="mb-0 pb-0">Maria Shehzad</h1>
+                                    <div class="verified">Verified</div>
+                                   </div>
+                                    <div class="d-flex align-items-center flex-wrap mb-2 pb-1">
+                                        <div class="couple-tag">
+                                            Phd
+                                          </div>
+                                          <div class="couple-tag">
+                                              Doctor
+                                          </div>
+                                          <div class="couple-tag">
+                                            Actor
+                                         </div>
+                                          <div class="couple-tag">
+                                             Karachi, Pakisatn
+                                          </div>
+                                          <div class="couple-tag">
+                                             Unmarried
+                                          </div>
+                                    </div>
+                                    <hr class="line">
+                                    <div class="couple-buttons mt-3 d-flex align-items-center justify-content-evenly">
+                                       <a href="" >Chat Now</a>
+                                       <a href="">More Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <div class="couple-card position-relative">
+                                <div class="couple-card-deatils">
+                                   
+                                    <div class="d-flex align-items-center view-deatils ms-auto">
+                                        <i class="fa-duotone fa-eye"></i> 12
+                                    </div>
+                                </div>
+                                <div class="carousel__slide">
+                                    
+                                    <figure>
+                                        <div>
+                                            <img src="assets/images/girls/g1.jpg" alt="">
+                                          
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="couple-card-content">
+                                   <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h1 class="mb-0 pb-0">Sania Aftab</h1>
+                                    <div class="not-verified">Not Verified</div>
+                                   </div>
+                                    <div class="d-flex align-items-center flex-wrap mb-2 pb-1">
+                                        <div class="couple-tag">
+                                            Uneducated
+                                          </div>
+                                          <div class="couple-tag">
+                                              House Wife
+                                          </div>
+                                          <div class="couple-tag">
+                                              Lahore, Pakisatn
+                                          </div>
+                                          <div class="couple-tag">
+                                             Unmarried
+                                          </div>
+                                    </div>
+                                    <hr class="line">
+                                    <div class="couple-buttons mt-3 d-flex align-items-center justify-content-evenly">
+                                       <a href="" class="disabled">Chat Now</a>
+                                       <a href="">More Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <div class="couple-card position-relative">
+                                <div class="couple-card-deatils">
+                                   
+                                    <div class="d-flex align-items-center view-deatils ms-auto">
+                                        <i class="fa-duotone fa-eye"></i> 12
+                                    </div>
+                                </div>
+                                <div class="carousel__slide">
+                                    
+                                    <figure>
+                                        <div>
+                                            <img src="assets/images/girls/g7.jpg" alt="">
+                                          
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="couple-card-content">
+                                   <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h1 class="mb-0 pb-0">Aleesha zain</h1>
+                                    <div class="not-verified">Not Verified</div>
+                                   </div>
+                                    <div class="d-flex align-items-center flex-wrap mb-2 pb-1">
+                                        <div class="couple-tag">
+                                            Matric
+                                          </div>
+                                          <div class="couple-tag">
+                                              House Wife
+                                          </div>
+                                          <div class="couple-tag">
+                                              Multan, Pakisatn
+                                          </div>
+                                          <div class="couple-tag">
+                                             Unmarried
+                                          </div>
+                                    </div>
+                                    <hr class="line">
+                                    <div class="couple-buttons mt-3 d-flex align-items-center justify-content-evenly">
+                                       <a href="" class="disabled">Chat Now</a>
+                                       <a href="">More Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <div class="couple-card position-relative">
+                                <div class="couple-card-deatils">
+                                   
+                                    <div class="d-flex align-items-center view-deatils ms-auto">
+                                        <i class="fa-duotone fa-eye"></i> 12
+                                    </div>
+                                </div>
+                                <div class="carousel__slide">
+                                    
+                                    <figure>
+                                        <div>
+                                            <img src="assets/images/girls/g7.jpg" alt="">
+                                          
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="couple-card-content">
+                                   <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h1 class="mb-0 pb-0">Aleesha zain</h1>
+                                    <div class="not-verified">Not Verified</div>
+                                   </div>
+                                    <div class="d-flex align-items-center flex-wrap mb-2 pb-1">
+                                        <div class="couple-tag">
+                                            Matric
+                                          </div>
+                                          <div class="couple-tag">
+                                              House Wife
+                                          </div>
+                                          <div class="couple-tag">
+                                              Multan, Pakisatn
+                                          </div>
+                                          <div class="couple-tag">
+                                             Unmarried
+                                          </div>
+                                    </div>
+                                    <hr class="line">
+                                    <div class="couple-buttons mt-3 d-flex align-items-center justify-content-evenly">
+                                       <a href="" class="disabled">Chat Now</a>
+                                       <a href="">More Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
 
                 </div>
             </div>
-        </section>
-<!-- info -->
-        <section class="info">
-            <img src="assets/images/couple/cta-bg-1.jpg" alt="">
-            <div class="info-overlay">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto text-center">
-                            <h1 class="mb-3">Do You want to Chat<span>?</span></h1>
-                            <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis illum
-                                optio accusantium commodi impedit, molestias provident nobis eveniet laboriosam, in
-                                ipsam esse quas et! Eligendi nostrum consequuntur voluptates saepe sed!</p>
-                            <a href="" class="theme-btn">Get Registered Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-         <!-- pricing cards -->
-         <section class="section">
-            <div class="wpo-pricing-section py-4">
-                <div class="container">
-                    <div class="wpo-pricing-wrap">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-12 mb-5">
-                                <div class="heading-div mb-md-5 mb-3">
-                                    <h1 class="main-heading mb-2 future w-500">Pricing Plans</h1>
-                                    <img src="assets/images/Group 28.png" alt="" class="mb-5">
+            <section>
+                <div class="container ">
+                    <div class="py-5">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="heading-div">
+                                    <h1 class="main-heading mb-2">Find Your Match</h1>
+                                    <img src="assets/images/Group 28.png" alt="">
 
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-6  col-md-6 col-12 ">
-                                <div class="wpo-pricing-item">
-                                    <div class="wpo-pricing-top">
-                                        <div class="wpo-pricing-img">
-                                         
-                                            <img src="assets/images/3D-icon/couple-holding-flower-bouquet.png" alt="">
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-lg-12">
+                                <div class="group-card-slider owl-theme owl-carousel">
+                                    <div class="couple-card position-relative">
+                                        <div class="Nstatus-verify">
+                                            <i class="fa-solid fa-seal-exclamation me-1"></i>
+                                            Not Verified
                                         </div>
-                                        <div class="wpo-pricing-text">
-                                            <h4>Free Plan</h4>
-                                            <h2>$0<span>/Monthly.</span></h2>
+                                        <div class="carousel__slide">
+
+                                            <figure>
+                                                <div>
+                                                    <img src="assets/images/girls/g2.jpg" alt="">
+
+                                                </div>
+                                            </figure>
                                         </div>
+                                        <div class="couple-card-content">
+                                            <div class="couple-card-content--box">
+
+                                                <h1 class="mb-1">Alishba Tahir</h1>
+                                                <p>Marketing Manager at Ubisoft</p>
+                                                <div class="matches my-2">
+                                                    3 out of 7 Profile Matches
+                                                </div>
+                                                <div class="views my-3 py-1 d-flex align-items-center justify-content-center">
+                                                    <img src="assets/images/view.svg" alt="" style="width:fit-content;" class="me-2">
+                                                    12 Profile Views
+                                                </div>
+                                            </div>
+                                            <div class="couple-card-buttons">
+                                                <div class="border-left">
+                                                    <a href="" class="d-flex align-items-center justify-content-center">
+                                                        <img src="assets/images/chat.svg" alt="" class=" mb-1 " style="width: fit-content;">
+                                                        Chat
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a href="">
+                                                        More
+                                                        <!-- <img src="assets/images/more.svg" alt="" class="ms-2 mb-1"> -->
+                                                        <i class="bi bi-arrow-right-circle"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="couple-card-content-more">
+                                            <h2 class="mb-4 mt-3">More Details</h2>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-book-open-cover"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    12 Years Education
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-user-tie-hair"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Doctor by profession
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-calendar-image"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    DOB: 12-10-1999
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-face-smile-hearts"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Single
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-castle"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Muslim
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-house-user"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Islamabad, Fedral, Pakistan
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-user-vneck"></i>
+                                                </div>
+                                                <div class="detail detail-desc">
+                                                    I am a 32-year-old Muslim doctor from Pakistan. Lorem ipsum dolor
+                                                    sit amet consectetur, adipisicing elit. Iure obcaecati explicabo
+                                                    illum at? Dicta earum autem a ab, nemo odit?
+                                                </div>
+                                            </div>
+
+                                        </div>
+
                                     </div>
-                                    <div class="wpo-pricing-bottom">
-                                        <div class="wpo-pricing-bottom-text">
-                                            <ul>
-                                                <li>Lorem ipsum dolor sit amet.</li>
-                                                <li>Lorem, ipsum dolor.</li>
-                                                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                                                <li>Lorem, ipsum dolor.</li>
-                                                <li>Lorem, ipsum.</li>
-                                            </ul> <a href="https://wpocean.com/wp/loveme/contact/">Choose Plan</a>
+
+                                    <div class="couple-card position-relative">
+                                        <div class="status-verify">
+                                            <img src="assets/images/verifyy.svg" alt="" class="me-1">
+                                            Verified
                                         </div>
+                                        <div class="carousel__slide">
+
+                                            <figure>
+                                                <div>
+                                                    <img src="assets/images/girls/g3.jpg" alt="">
+
+                                                </div>
+                                            </figure>
+                                        </div>
+                                        <div class="couple-card-content">
+                                            <div class="couple-card-content--box">
+
+                                                <h1 class="mb-1">Alishba Tahir</h1>
+                                                <p>Marketing Manager at Ubisoft</p>
+                                                <div class="matches my-2">
+                                                    3 out of 7 Profile Matches
+                                                </div>
+                                                <div class="views my-3 py-1 d-flex align-items-center justify-content-center">
+                                                    <img src="assets/images/view.svg" alt="" style="width:fit-content;" class="me-2">
+                                                    12 Profile Views
+                                                </div>
+                                            </div>
+                                            <div class="couple-card-buttons">
+                                                <div class="border-left">
+                                                    <a href="" class="d-flex align-items-center justify-content-center">
+                                                        <img src="assets/images/chat.svg" alt="" class=" mb-1 " style="width: fit-content;">
+                                                        Chat
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a href="">
+                                                        More
+                                                        <!-- <img src="assets/images/more.svg" alt="" class="ms-2 mb-1"> -->
+                                                        <i class="bi bi-arrow-right-circle"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="couple-card-content-more">
+                                            <h2 class="mb-4 mt-3">More Details</h2>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-book-open-cover"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    12 Years Education
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-user-tie-hair"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Doctor by profession
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-calendar-image"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    DOB: 12-10-1999
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-face-smile-hearts"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Single
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-castle"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Muslim
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-house-user"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Islamabad, Fedral, Pakistan
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-user-vneck"></i>
+                                                </div>
+                                                <div class="detail detail-desc">
+                                                    I am a 32-year-old Muslim doctor from Pakistan. Lorem ipsum dolor
+                                                    sit amet consectetur, adipisicing elit. Iure obcaecati explicabo
+                                                    illum at? Dicta earum autem a ab, nemo odit?
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="couple-card position-relative">
+                                        <div class="Nstatus-verify">
+                                            <i class="fa-solid fa-seal-exclamation me-1"></i>
+                                            Not Verified
+                                        </div>
+                                        <div class="carousel__slide">
+
+                                            <figure>
+                                                <div>
+                                                    <img src="assets/images/girls/g4.jpg" alt="">
+
+                                                </div>
+                                            </figure>
+                                        </div>
+                                        <div class="couple-card-content">
+                                            <div class="couple-card-content--box">
+
+                                                <h1 class="mb-1">Alishba Tahir</h1>
+                                                <p>Marketing Manager at Ubisoft</p>
+                                                <div class="matches my-2">
+                                                    3 out of 7 Profile Matches
+                                                </div>
+                                                <div class="views my-3 py-1 d-flex align-items-center justify-content-center">
+                                                    <img src="assets/images/view.svg" alt="" style="width:fit-content;" class="me-2">
+                                                    12 Profile Views
+                                                </div>
+                                            </div>
+                                            <div class="couple-card-buttons">
+                                                <div class="border-left">
+                                                    <a href="" class="d-flex align-items-center justify-content-center">
+                                                        <img src="assets/images/chat.svg" alt="" class=" mb-1 " style="width: fit-content;">
+                                                        Chat
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a href="">
+                                                        More
+                                                        <!-- <img src="assets/images/more.svg" alt="" class="ms-2 mb-1"> -->
+                                                        <i class="bi bi-arrow-right-circle"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="couple-card-content-more">
+                                            <h2 class="mb-4 mt-3">More Details</h2>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-book-open-cover"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    12 Years Education
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-user-tie-hair"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Doctor by profession
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-calendar-image"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    DOB: 12-10-1999
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-face-smile-hearts"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Single
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-castle"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Muslim
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-house-user"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Islamabad, Fedral, Pakistan
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-user-vneck"></i>
+                                                </div>
+                                                <div class="detail detail-desc">
+                                                    I am a 32-year-old Muslim doctor from Pakistan. Lorem ipsum dolor
+                                                    sit amet consectetur, adipisicing elit. Iure obcaecati explicabo
+                                                    illum at? Dicta earum autem a ab, nemo odit?
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="couple-card position-relative">
+                                        <div class="status-verify">
+                                            <img src="assets/images/verifyy.svg" alt="" class="me-1">
+                                            Verified
+                                        </div>
+                                        <div class="carousel__slide">
+
+                                            <figure>
+                                                <div>
+                                                    <img src="assets/images/girls/g8.jpg" alt="">
+
+                                                </div>
+                                            </figure>
+                                        </div>
+                                        <div class="couple-card-content">
+                                            <div class="couple-card-content--box">
+
+                                                <h1 class="mb-1">Alishba Tahir</h1>
+                                                <p>Marketing Manager at Ubisoft</p>
+                                                <div class="matches my-2">
+                                                    3 out of 7 Profile Matches
+                                                </div>
+                                                <div class="views my-3 py-1 d-flex align-items-center justify-content-center">
+                                                    <img src="assets/images/view.svg" alt="" style="width:fit-content;" class="me-2">
+                                                    12 Profile Views
+                                                </div>
+                                            </div>
+                                            <div class="couple-card-buttons">
+                                                <div class="border-left">
+                                                    <a href="" class="d-flex align-items-center justify-content-center">
+                                                        <img src="assets/images/chat.svg" alt="" class=" mb-1 " style="width: fit-content;">
+                                                        Chat
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a href="">
+                                                        More
+                                                        <!-- <img src="assets/images/more.svg" alt="" class="ms-2 mb-1"> -->
+                                                        <i class="bi bi-arrow-right-circle"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="couple-card-content-more">
+                                            <h2 class="mb-4 mt-3">More Details</h2>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-book-open-cover"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    12 Years Education
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-user-tie-hair"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Doctor by profession
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-calendar-image"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    DOB: 12-10-1999
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-face-smile-hearts"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Single
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-castle"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Muslim
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-house-user"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Islamabad, Fedral, Pakistan
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-user-vneck"></i>
+                                                </div>
+                                                <div class="detail detail-desc">
+                                                    I am a 32-year-old Muslim doctor from Pakistan. Lorem ipsum dolor
+                                                    sit amet consectetur, adipisicing elit. Iure obcaecati explicabo
+                                                    illum at? Dicta earum autem a ab, nemo odit?
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="couple-card position-relative">
+                                        <div class="status-verify">
+                                            <img src="assets/images/verifyy.svg" alt="" class="me-1">
+                                            Verified
+                                        </div>
+                                        <div class="carousel__slide">
+
+                                            <figure>
+                                                <div>
+                                                    <img src="assets/images/girls/g7.jpg" alt="">
+
+                                                </div>
+                                            </figure>
+                                        </div>
+                                        <div class="couple-card-content">
+                                            <div class="couple-card-content--box">
+
+                                                <h1 class="mb-1">Alishba Tahir</h1>
+                                                <p>Marketing Manager at Ubisoft</p>
+                                                <div class="matches my-2">
+                                                    3 out of 7 Profile Matches
+                                                </div>
+                                                <div class="views my-3 py-1 d-flex align-items-center justify-content-center">
+                                                    <img src="assets/images/view.svg" alt="" style="width:fit-content;" class="me-2">
+                                                    12 Profile Views
+                                                </div>
+                                            </div>
+                                            <div class="couple-card-buttons">
+                                                <div class="border-left">
+                                                    <a href="" class="d-flex align-items-center justify-content-center">
+                                                        <img src="assets/images/chat.svg" alt="" class=" mb-1 " style="width: fit-content;">
+                                                        Chat
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a href="">
+                                                        More
+                                                        <!-- <img src="assets/images/more.svg" alt="" class="ms-2 mb-1"> -->
+                                                        <i class="bi bi-arrow-right-circle"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="couple-card-content-more">
+                                            <h2 class="mb-4 mt-3">More Details</h2>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-book-open-cover"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    12 Years Education
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-user-tie-hair"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Doctor by profession
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-calendar-image"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    DOB: 12-10-1999
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-face-smile-hearts"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Single
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-castle"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Muslim
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-house-user"></i>
+                                                </div>
+                                                <div class="detail">
+                                                    Islamabad, Fedral, Pakistan
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-user-vneck"></i>
+                                                </div>
+                                                <div class="detail detail-desc">
+                                                    I am a 32-year-old Muslim doctor from Pakistan. Lorem ipsum dolor
+                                                    sit amet consectetur, adipisicing elit. Iure obcaecati explicabo
+                                                    illum at? Dicta earum autem a ab, nemo odit?
+                                                </div>
+                                            </div>
+
+                                        </div>
+
                                     </div>
                                 </div>
+
+                                
                             </div>
-                            <div class="col-xl-4 col-lg-6  col-md-6 col-12 ">
-                                <div class="wpo-pricing-item mb-0">
-                                    <div class="wpo-pricing-top">
-                                        <div class="wpo-pricing-img">
-                                            <img src="assets/images/3D-icon/beautiful-couple-giving-photography-pose.png"
-                                                alt="">
+                   
+                   
+                   
+                   
+                            <!-- <div class="col-xl-3 col-lg-4">
+                                <div class="couple-card position-relative">
+                                    <div class="status-verify">
+                                        <img src="assets/images/verifyy.svg" alt="" class="me-1">
+                                        Verified
+                                    </div>
+                                    <div class="carousel__slide">
+
+                                        <figure>
+                                            <div>
+                                                <img src="assets/images/girls/g2.jpg" alt="">
+
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="couple-card-content">
+                                        <div class="couple-card-content--box">
+
+                                            <h1 class="mb-1">Alishba Tahir</h1>
+                                            <p>Marketing Manager at Ubisoft</p>
+                                            <div class="matches my-2">
+                                                3 out of 7 Profile Matches
+                                            </div>
+                                            <div class="views my-3 py-1 ">
+                                                <img src="assets/images/view.svg" alt="">
+                                                12 Profile Views
+                                            </div>
                                         </div>
-                                        <div class="wpo-pricing-text">
-                                            <h4>Premium Plan</h4>
-                                            <h2>$550<span>/Monthly.</span></h2>
+                                        <div class="couple-card-buttons">
+                                            <div class="border-left">
+                                                <a href="" class="">
+                                                    <img src="assets/images/chat.svg" alt="" class=" mb-1">
+                                                    Chat
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    More
+                                                    <i class="bi bi-arrow-right-circle"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="wpo-pricing-bottom">
-                                        <div class="wpo-pricing-bottom-text">
-                                            <ul>
-                                                <li>Lorem ipsum dolor sit amet.</li>
-                                                <li>Lorem, ipsum dolor.</li>
-                                                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                                                <li>Lorem, ipsum dolor.</li>
-                                                <li>Lorem, ipsum.</li>
-                                            </ul> <a href="https://wpocean.com/wp/loveme/contact/">Choose Plan</a>
+                                    <div class="couple-card-content-more">
+                                        <h2 class="mb-4 mt-3">More Details</h2>
+
+                                        <div class="d-flex align-items-start">
+                                            <div class="icon">
+                                                <i class="fa-regular fa-book-open-cover"></i>
+                                            </div>
+                                            <div class="detail">
+                                                12 Years Education
+                                            </div>
                                         </div>
+
+                                        <div class="d-flex align-items-start">
+                                            <div class="icon">
+                                                <i class="fa-regular fa-user-tie-hair"></i>
+                                            </div>
+                                            <div class="detail">
+                                                Doctor by profession
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-start">
+                                            <div class="icon">
+                                                <i class="fa-regular fa-calendar-image"></i>
+                                            </div>
+                                            <div class="detail">
+                                                DOB: 12-10-1999
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-start">
+                                            <div class="icon">
+                                                <i class="fa-regular fa-face-smile-hearts"></i>
+                                            </div>
+                                            <div class="detail">
+                                                Single
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-start">
+                                            <div class="icon">
+                                                <i class="fa-regular fa-castle"></i>
+                                            </div>
+                                            <div class="detail">
+                                                Muslim
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-start">
+                                            <div class="icon">
+                                                <i class="fa-regular fa-house-user"></i>
+                                            </div>
+                                            <div class="detail">
+                                                Islamabad, Fedral, Pakistan
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-start">
+                                            <div class="icon">
+                                                <i class="fa-regular fa-user-vneck"></i>
+                                            </div>
+                                            <div class="detail detail-desc">
+                                                I am a 32-year-old Muslim doctor from Pakistan. Lorem ipsum dolor sit
+                                                amet consectetur, adipisicing elit. Iure obcaecati explicabo illum at?
+                                                Dicta earum autem a ab, nemo odit?
+                                            </div>
+                                        </div>
+
                                     </div>
+
                                 </div>
-                            </div>
+                            </div> -->
+
                         </div>
+
                     </div>
                 </div>
-            </div>
+            </section>
         </section>
-<!-- info -->
-        <section class="info">
-            <img src="assets/images/couple/slide-1.jpg" alt="">
-            <div class="info-overlay">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto text-center">
-                            <h1 class="mb-3">Advantages of bieng Premium</h1>
-                            <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis illum
-                                optio accusantium commodi impedit, molestias provident nobis eveniet laboriosam, in
-                                ipsam esse quas et! Eligendi nostrum consequuntur voluptates saepe sed!</p>
-                            <a href="" class="theme-btn">Choose Plan Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      
+        <section>
+
         </section>
-
-
-
     </main>
-
-    <footer class="footer">
-        <div class="border-cont">
-            <div class="container-fluid ">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-                        <div class="footer-logo">
-                            <img src="assets/images/merri time.png" alt="">
-                        </div>
-                        <p class="mb-3 pb-0">Welcome and open yourself to your truest love this year with us! With the
-                            Release Process.</p>
-                        <div class="d-flex align-items-center mb-lg-9 mb-3">
-                            <div class="social-div">
-                                <i class="bi bi-facebook"></i>
-                            </div>
-                            <div class="social-div">
-                                <i class="bi bi-twitter"></i>
-                            </div>
-                            <div class="social-div">
-                                <i class="bi bi-instagram"></i>
-                            </div>
-                            <div class="social-div">
-                                <i class="bi bi-pinterest"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-                        <h1 class="footer-heading future">Information</h1>
-                        <p class="mb-3 pb-0"><a href=""><i class="bi bi-arrow-up-right-circle-fill"></i>Home</a></p>
-                        <p class="mb-3 pb-0"><a href=""><i class="bi bi-arrow-up-right-circle-fill"></i>About Us</a></p>
-                        <p class="mb-3 pb-0"><a href=""><i class="bi bi-arrow-up-right-circle-fill"></i>How It Works</a>
-                        </p>
-                        <p class="mb-3 pb-0"><a href=""><i class="bi bi-arrow-up-right-circle-fill"></i>Contact</a></p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-                        <h1 class="footer-heading future">OTHER Links</h1>
-                        <p class="mb-3 pb-0"><a href=""><i class="bi bi-arrow-up-right-circle-fill"></i>Free Plan</a>
-                        </p>
-                        <p class="mb-3 pb-0"><a href=""><i class="bi bi-arrow-up-right-circle-fill"></i>Premium Plan</a>
-                        </p>
-                        <p class="mb-3 pb-0"><a href=""><i class="bi bi-arrow-up-right-circle-fill"></i>Privacy
-                                Policy</a></p>
-                        <p class="mb-3 pb-0"><a href=""><i class="bi bi-arrow-up-right-circle-fill"></i>Terms and
-                                Conditions</a></p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 ">
-                        <h1 class="footer-heading future">Address</h1>
-                        <p class="mb-3 pb-0">Would you have any enquiries. Lease feel free to contact us</p>
-                        <p class="mb-3 pb-0"><i class="bi bi-envelope-fill"></i><a href="">info@qkcreators.com</a></p>
-                        <p class="mb-3 pb-0"><i class="bi bi-telephone-fill"></i><a href="">+92 301 6200122</a></p>
-                        <p class="mb-3 pb-0"><i class="bi bi-geo-alt-fill"></i>Punjab, Pakistan</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer> 
-
     <!-- chat -->
     <div class="chat__popup">
         <div class="chat-header d-flex align-items-center">
@@ -1362,13 +1215,13 @@
         </div>
     </div>
 
-
-
-
-
-
-
     <div class="backdrop"></div>
+
+
+
+
+
+
 
     <!-- Jquery -->
     <script src="assets/Js/jquery.js"></script>
@@ -1417,31 +1270,6 @@
             });
         });
 
-    </script>
-    <!-- counter -->
-    <script>
-        let count = document.querySelectorAll(".count")
-        let arr = Array.from(count)
-
-
-
-        arr.map(function (item) {
-            let startnumber = 0
-
-            function counterup() {
-                startnumber++
-                item.innerHTML = startnumber
-
-                if (startnumber == item.dataset.number) {
-                    clearInterval(stop)
-                }
-            }
-
-            let stop = setInterval(function () {
-                counterup()
-            }, 7)
-
-        })
     </script>
 </body>
 

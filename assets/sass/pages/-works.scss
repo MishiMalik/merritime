@@ -12,6 +12,7 @@
       border-left: 1px solid $primary-dark;
       position: relative;
       padding: 0px !important;
+      padding-left: 30px !important;
       &::after{
         content: " ";
         height: 15px;
@@ -27,6 +28,7 @@
         border-right: 1px solid $primary-dark;
         position: relative;
         padding: 0px !important;
+        padding-right: 30px !important;
         &::after{
           content: " ";
           height: 15px;
@@ -42,9 +44,14 @@
         padding: 20px 20px 40px 20px !important;
       h1 {
         font-size: 16px;
+        font-weight: 600;
+        color: $gray;
       }
-      h1 {
-        font-size: 16px;
+      h2{
+        font-size: 20px;
+        font-weight: 600;
+        color: $primary-dark;
+        margin-bottom: 10px;
       }
       p {
         font-size: 14px;

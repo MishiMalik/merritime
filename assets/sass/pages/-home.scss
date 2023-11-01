@@ -1,19 +1,31 @@
 .header-slider {
   height: 500px;
   overflow: hidden;
-
+  @media only screen and (min-width:1600px){
+    height: 600px;
+  }
   .single-item {
     height: 500px;
+    @media only screen and (min-width:1600px){
+      height: 600px;
+    }
     img {
       object-fit: cover;
       object-position: center;
       height: 500px;
       width: 100%;
+      @media only screen and (min-width:1600px){
+        height: 600px;
+      }
     }
   }
+ 
   .slick-prev,
   .slick-next {
     top: 250px !important;
+    @media only screen and (min-width:1600px){
+      top: 300px !important;
+    }
   }
   .slick-prev,
   .slick-next {
@@ -72,19 +84,25 @@
       width: 80%;
       left: 10%;
     }
-    @media only screen and (max-width: 600px) {
-      top: 80px;
+    @media only screen and (max-width: 380px) {
+      top: 120px;
     }
     h2 {
       font-size: 30px;
       color: $primary-dark;
       font-weight: 500 !important;
       font-family: Futura PT, sans-serif;
+      @media only screen and (max-width: 380px) {
+        font-size: 26px;
+      }
     }
     p {
       font-size: 18px;
       font-weight: 500;
       color: black;
+      @media only screen and (max-width: 380px) {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -98,6 +116,73 @@
   padding: 15px 30px;
   border-radius: 4px;
   position: relative;
+  @media only screen and (max-width:991px){
+    padding: 15px 50px;
+  }
+  @media only screen and (max-width:600px){
+    padding: 50px 15px;
+    margin-top: 0px;
+     }
+}
+.top-flvr{
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  bottom: 92%;
+  // top: -90px;
+  // width: 300px;
+  // width: auto !important;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  @media only screen and (max-width:600px){
+   display:flex;
+     }
+     img{
+      width: 300px;
+     }
+    
+}
+.top-flvr2{
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  bottom: 89%;
+  // top: -90px;
+  // width: 300px;
+  // width: auto !important;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  @media only screen and (max-width:600px){
+   display:flex;
+     }
+     img{
+      width: 300px;
+     }
+    
+}
+.bottom-flvr{
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  top: 89%;
+  // top: -90px;
+  // width: 300px;
+  // width: auto !important;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  @media only screen and (max-width:600px){
+   display:flex;
+     }
+     img{
+      width: 300px;
+     }
+    
 }
 .left-flvr{
   position: absolute;
@@ -105,6 +190,12 @@
   top: -20px;
   height: 240px;
   width: auto !important;
+  @media only screen and (max-width:991px){
+    left: -30px;
+    }
+    @media only screen and (max-width:600px){
+      display: none;
+       }
 }
 .right-flvr{
   position: absolute;
@@ -112,6 +203,12 @@
   top: -20px;
   height: 240px;
   width: auto !important;
+  @media only screen and (max-width:991px){
+    right: -30px;
+    }
+      @media only screen and (max-width:600px){
+   display: none;
+    }
 }
 // ==================================cards
 // 4*5
@@ -391,6 +488,7 @@
   top: 10px;
   z-index: 2;
 }
+
 // =================================================couple card2
 .couple-card2 {
   border-radius: 4px;
@@ -680,9 +778,18 @@
 // ============================================info
 .info{
   position: relative;
+ min-height: 320px;
+ @media only screen and (max-width:375px){
+  min-height: 375px;
+}
   img{
     height: auto;
     width: 100%;
+    min-height: 320px;
+    object-fit: cover;
+    @media only screen and (max-width:375px){
+      min-height: 375px;
+    }
   }
   .info-overlay{
     background-color: #f81c1c88;
@@ -706,6 +813,9 @@
         font-family: 'Nunito Sans', sans-serif;
         padding-left: 10px;
       }
+      @media only screen and (max-width:768px){
+        font-size: 30px;
+      }
     }
     p{
       font-size: 16px;
@@ -721,8 +831,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media only screen and (max-width:768px){
+    justify-content: center;
+  }
 }
-
+.hide-sm{
+  @media only screen and (max-width:768px){
+    display: none;
+  }
+}
 .pg-ul {
   display: flex;
   align-items: flex-start;
@@ -805,7 +922,9 @@
   z-index: 1;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background: #fff;
-  
+  @media only screen and (max-width:767px){
+    padding: 50px 20px;
+  }
 
 
 .counter-div{
